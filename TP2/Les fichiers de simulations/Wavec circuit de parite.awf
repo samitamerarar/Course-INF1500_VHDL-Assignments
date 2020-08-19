@@ -1,0 +1,71 @@
+$WAVE4
+$RESOLUTION 1000
+$ENDTIME 100000
+I 1 "c#10#STD_ULOGICc9 UX01ZWLH-"
+$IN 1 1 "/parite_finale/A0"
+$IN 2 1 16 0 "1"
+$IN 3 1 16 0 "2"
+$IN 4 1 16 0 "3"
+$OUT 5 1 15 0 Output0
+P 0 1-5 CS "0"
+P 0 1 Stimulator "CLK:FRM:Override:100.000000;2;1;0;50;1:Clock:1:"
+P 0 4 Stimulator "CLK:FRM:Override:12500.000000;1;1;0;50;1:Clock:1:"
+P 0 3 Stimulator "CLK:FRM:Override:25.000000;2;1;0;50;1:Clock:1:"
+P 0 2 Stimulator "CLK:FRM:Override:50.000000;2;1;0;50;1:Clock:1:"
+$WAVES 1
+=0 T 0
+R 1 2 =1 T 50k
+$VALUES
+V 3
+0
+1
+0
+$END
+$WAVES 2
+*0
+R 1 4 =2 T 25k
+$VALUES
+R 2 2 0 1
+V 1
+0
+$END
+$WAVES 3
+*0
+R 1 8 =3 T 12500
+$VALUES
+R 2 4 0 1
+V 1
+0
+$END
+$WAVES 4
+*0
+R 1 16 =4 T 6250
+$VALUES
+R 2 8 0 1
+V 1
+0
+$END
+$WAVES 5
+*0
+=5 D 0 3
+R 1 2 =6 D 6250 1
+=7 D 0 2
+R 1 2 *6
+*7
+*5
+R 1 2 *6
+R 3 3 *7 *6 *6
+*7
+*5
+R 1 2 *6
+*7
+R 1 2 *6
+*7
+$VALUES
+V 1
+U
+R 2 13 0 1
+V 1
+0
+$END
+$ENDWAVE

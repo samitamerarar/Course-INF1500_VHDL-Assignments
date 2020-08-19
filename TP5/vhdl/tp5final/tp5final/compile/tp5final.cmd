@@ -1,0 +1,1 @@
+-w -s "C:\Users\taara\tp5final\library.cfg"  -j "C:\Users\taara\tp5final\tp5final\projlib.cfg"  -d "C:\Users\taara\tp5final\tp5final\compile"   -work tp5final  -O3 -e 100 -2002 "C:\Users\taara\tp5final\tp5final\src\oventimetimerfsm.vhd"

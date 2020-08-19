@@ -1,0 +1,81 @@
+$WAVE4
+$RESOLUTION 1000
+$ENDTIME 100000
+I 1 "c#10#STD_ULOGICc9 UX01ZWLH-"
+$IN 1 1 "/dec_fin_fin/C0"
+$IN 2 1 14 0 "1"
+$IN 3 1 14 0 "2"
+$IN 4 1 14 0 E0
+$IN 5 1 15 0 "1"
+$IN 6 1 15 0 "2"
+$OUT 7 1 13 1 D
+P 0 1-7 CS "0"
+P 0 1 Stimulator "CLK:FRM:Override:100.000000;2;1;0;50;1:Clock:1:"
+P 0 4 Stimulator "CLK:FRM:Override:12500.000000;1;1;0;50;1:Clock:1:"
+P 0 3 Stimulator "CLK:FRM:Override:25.000000;2;1;0;50;1:Clock:1:"
+P 0 6 Stimulator "CLK:FRM:Override:3125.000000;1;1;0;50;1:Clock:1:"
+P 0 2 Stimulator "CLK:FRM:Override:50.000000;2;1;0;50;1:Clock:1:"
+P 0 5 Stimulator "CLK:FRM:Override:6250.000000;1;1;0;50;1:Clock:1:"
+$WAVES 1
+=0 T 0
+R 1 2 =1 T 50k
+$VALUES
+V 3
+0
+1
+0
+$END
+$WAVES 2
+*0
+R 1 4 =2 T 25k
+$VALUES
+R 2 2 0 1
+V 1
+0
+$END
+$WAVES 3
+*0
+R 1 8 =3 T 12500
+$VALUES
+R 2 4 0 1
+V 1
+0
+$END
+$WAVES 4
+*0
+R 1 16 =4 T 6250
+$VALUES
+R 2 8 0 1
+V 1
+0
+$END
+$WAVES 5
+*0
+R 1 32 =5 T 3125
+$VALUES
+R 2 16 0 1
+V 1
+0
+$END
+$WAVES 6
+*0
+R 2 32 =6 T 1562 =7 T 1563
+$VALUES
+R 2 32 0 1
+V 1
+0
+$END
+$WAVES 7
+*0
+=8 D 0 2
+R 4 3 =9 D 1562 2 =10 D 12500 2 =11 D 1563 2 *10
+*9
+*10
+$VALUES
+V 1
+U
+R 2 7 1 0
+V 1
+1
+$END
+$ENDWAVE

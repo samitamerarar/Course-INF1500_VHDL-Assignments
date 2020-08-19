@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: C:\Users\taara\tp5final\tp5final\src\oventimetimerfsm.vhd" 
+MESSAGE "Compile Entity "oventimetimerfsm"" 
+MESSAGE "Compile Architecture "a" of Entity "oventimetimerfsm"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]" 

@@ -1,0 +1,2405 @@
+# Design: Design tp5final already active.
+# 
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: C-Synthesis: Not Defined
+# DESIGN: HDL Synthesis: Xilinx ISE/WebPack 14.4 XST VHDL/Verilog
+# DESIGN: Physical Synthesis: Not Defined
+# DESIGN: Implementation: Xilinx ISE/WebPack 14.4
+acom -reorder -O3 -work tp5final -2002  $dsn/src/timer.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\timer.vhd
+# Compile Entity "timer"
+# Compile Architecture "a" of Entity "timer"
+# Top-level unit(s) detected:
+# Entity => timer
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -work tp5final -2002  $dsn/src/timekeeper.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\timekeeper.vhd
+# Compile Entity "timekeeper"
+# Compile Architecture "a" of Entity "timekeeper"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/pulsegen.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\pulsegen.vhd
+# Compile Entity "pulsegen"
+# Compile Architecture "a" of Entity "pulsegen"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/oventimetimerfsm.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\oventimetimerfsm.vhd
+# Compile Entity "oventimetimerfsm"
+# Compile Architecture "a" of Entity "oventimetimerfsm"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/asciizero2space.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\asciizero2space.vhd
+# Compile Entity "asciizero2space"
+# Compile Architecture "a" of Entity "asciizero2space"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/bcd2ascii.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\bcd2ascii.vhd
+# Compile Entity "bcd2ascii"
+# Compile Architecture "a" of Entity "bcd2ascii"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/bin2bcd2d.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\bin2bcd2d.vhd
+# Compile Entity "bin2bcd2d"
+# Compile Architecture "a" of Entity "bin2bcd2d"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/buzzer.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\buzzer.vhd
+# Compile Entity "buzzer"
+# Compile Architecture "a" of Entity "buzzer"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/clk1hz.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\clk1hz.vhd
+# Compile Entity "clk1hz"
+# Compile Architecture "a" of Entity "clk1hz"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/colongen.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\colongen.vhd
+# Compile Entity "colongen"
+# Compile Architecture "a" of Entity "colongen"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/deb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\deb.vhd
+# Compile Entity "deb"
+# Compile Architecture "a" of Entity "deb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/hd44780_simple.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\hd44780_simple.vhd
+# Compile Entity "hd44780_simple"
+# Compile Architecture "arch" of Entity "hd44780_simple"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/hd44780_8chars_2lines.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\hd44780_8chars_2lines.vhd
+# Compile Entity "hd44780_8chars_2lines"
+# Compile Architecture "arch" of Entity "hd44780_8chars_2lines"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/spacegen.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\spacegen.vhd
+# Compile Entity "spacegen"
+# Compile Architecture "a" of Entity "spacegen"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# Warning: Diagram structure inconsistencies encountered when opening "C:\Users\taara\tp5final\tp5final\src\top.bde".
+# Inconsistencies have been removed during loading and file has been marked as modified.
+# top.bde: Updating instances of symbol 'asciizero2space' from library 'tp5final' (U13, U38)
+# top.bde: Updating instances of symbol 'bcd2ascii' from library 'tp5final' (U7, U8, U9, U10, U11, U12, U25, U26, U28, U29)
+# top.bde: Updating instances of symbol 'bin2bcd2d' from library 'tp5final' (U3, U5, U6, U14, U27)
+# top.bde: Updating instances of symbol 'buzzer' from library 'tp5final' (U34)
+# top.bde: Updating instances of symbol 'clk1hz' from library 'tp5final' (U1)
+# top.bde: Updating instances of symbol 'colongen' from library 'tp5final' (U4)
+# top.bde: Updating instances of symbol 'deb' from library 'tp5final' (U16, U18, U20, U22, U24)
+# top.bde: Updating instances of symbol 'hd44780_8chars_2lines' from library 'tp5final' (U30)
+# top.bde: Updating instances of symbol 'oventimetimerfsm' from library 'tp5final' (U37)
+# top.bde: Updating instances of symbol 'pulsegen' from library 'tp5final' (U15, U17, U19, U21, U23)
+# top.bde: Updating instances of symbol 'spacegen' from library 'tp5final' (U31)
+# top.bde: Updating instances of symbol 'timekeeper' from library 'tp5final' (U2)
+# top.bde: Updating instances of symbol 'timer' from library 'tp5final' (U36)
+acom -O3 -work tp5final -2002  $dsn/src/top.bde
+# Compile...
+# DRC: Checking file 'C:\Users\taara\tp5final\tp5final\src\top.bde'.
+# DRC: top.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\taara\tp5final\tp5final\compile\top.vhd from C:\Users\taara\tp5final\tp5final\src\top.bde ... 
+# Generation successful 
+# Error: ULM_0038: Cannot open file `C:\Users\taara\tp5final\tp5final\tp5final\tp5final.lib'
+# Error: ULM_0038: Cannot open file `C:\Users\taara\tp5final\tp5final\tp5final\tp5final.lib'
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\top.vhd
+# Compile Entity "top"
+# Compile Architecture "top" of Entity "top"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work tp5final -2002  $dsn/src/top.bde
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\top.vhd
+# Compile Entity "top"
+# Compile Architecture "top" of Entity "top"
+# Compile success 0 Errors 0 Warnings  Analysis time :  93.0 [ms]
+# Running synthesis...
+# Warning: Synthesis: 0 errors, 24 warning(s)
+# Checking if synthesis needs to be updated...
+# Checking if implementation needs to be updated...
+# Implementation has been started.
+# Error: File 'C:/Users/taara/tp5final/tp5final/implement/ver1/rev1/map.ncd' does not exist.
+# Implementation ver1->rev1: 22 error(s), 3 warning(s).
+# Error: Implementation ended with error(s).
+# Error: No simulation netlist was produced.
+# Checking if synthesis needs to be updated...
+# Checking if implementation needs to be updated...
+# Implementation has been started.
+# Error: File 'C:/Users/taara/tp5final/tp5final/implement/ver1/rev1/map.ncd' does not exist.
+# Implementation ver1->rev1: 22 error(s), 3 warning(s).
+# Error: Implementation ended with error(s).
+# Error: No simulation netlist was produced.
+# Checking if synthesis needs to be updated...
+# Checking if implementation needs to be updated...
+# Implementation has been started.
+# Error: File 'C:/Users/taara/tp5final/tp5final/implement/ver1/rev1/map.ncd' does not exist.
+# Implementation ver1->rev1: 22 error(s), 3 warning(s).
+# Error: Implementation ended with error(s).
+# Error: No simulation netlist was produced.
+# Checking if synthesis needs to be updated...
+# Checking if implementation needs to be updated...
+# Implementation has been started.
+# Implementation ver1->rev1: 0 error(s), 7 warning(s).
+# Warning: Implementation ended with warning(s).
+# Setting simulation top-level to 'top' for timing simulation options.
+# Launching iMPACT.
+# iMPACT has been launched.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -work tp5final -2002  $dsn/src/timer.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\timer.vhd
+# Compile Entity "timer"
+# Compile Architecture "a" of Entity "timer"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/timer.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\timer.vhd
+# Compile Entity "timer"
+# Compile Architecture "a" of Entity "timer"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/timer.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\timer.vhd
+# Compile Entity "timer"
+# Compile Architecture "a" of Entity "timer"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/timer.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\timer.vhd
+# Compile Entity "timer"
+# Compile Architecture "a" of Entity "timer"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/timer.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\timer.vhd
+# Compile Entity "timer"
+# Compile Architecture "a" of Entity "timer"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/timer.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\timer.vhd
+# Compile Entity "timer"
+# Compile Architecture "a" of Entity "timer"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/top.bde
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\top.vhd
+# Compile Entity "top"
+# Compile Architecture "top" of Entity "top"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# Running synthesis...
+# Warning: Synthesis: 0 errors, 23 warning(s)
+# Checking if synthesis needs to be updated...
+# Checking if implementation needs to be updated...
+# File "C:\Users\taara\tp5final\tp5final\synthesis\top.ngc" has been modified after last implementation run.
+# Implementation has been started.
+# Implementation ver1->rev1: 0 error(s), 7 warning(s).
+# Warning: Implementation ended with warning(s).
+# Launching iMPACT.
+# iMPACT has been launched.
+acom -O3 -work tp5final -2002  $dsn/src/oventimetimerfsm.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\oventimetimerfsm.vhd
+# Compile Entity "oventimetimerfsm"
+# Compile Architecture "a" of Entity "oventimetimerfsm"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/pulsegen.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\pulsegen.vhd
+# Compile Entity "pulsegen"
+# Compile Architecture "a" of Entity "pulsegen"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+asim -O5 +access +r +m+pulsegen pulsegen a
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5801 kB (elbread=1023 elab2=4628 kernel=149 sdf=0)
+#  19:40, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: pulsegen (a)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5801 kB (elbread=1023 elab2=4628 kernel=149 sdf=0)
+#  19:41, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: pulsegen (a)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5801 kB (elbread=1023 elab2=4628 kernel=149 sdf=0)
+#  19:43, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: pulsegen (a)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+acom -O3 -work tp5final -2002  $dsn/src/pulsegen.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\pulsegen.vhd
+# Compile Entity "pulsegen"
+# Compile Architecture "a" of Entity "pulsegen"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/pulsegen.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\pulsegen.vhd
+# Compile Entity "pulsegen"
+# Compile Architecture "a" of Entity "pulsegen"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+pulsegen pulsegen a
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5802 kB (elbread=1023 elab2=4628 kernel=149 sdf=0)
+#  19:54, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: pulsegen (a)
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5802 kB (elbread=1023 elab2=4628 kernel=149 sdf=0)
+#  19:54, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: pulsegen (a)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5802 kB (elbread=1023 elab2=4628 kernel=149 sdf=0)
+#  19:55, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: pulsegen (a)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+acom -O3 -work tp5final -2002  $dsn/src/pulsegen.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\pulsegen.vhd
+# Compile Entity "pulsegen"
+# Compile Architecture "a" of Entity "pulsegen"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5801 kB (elbread=1023 elab2=4628 kernel=149 sdf=0)
+#  20:00, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: pulsegen (a)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+acom -O3 -work tp5final -2002  $dsn/src/pulsegen.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\pulsegen.vhd
+# Compile Entity "pulsegen"
+# Compile Architecture "a" of Entity "pulsegen"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5802 kB (elbread=1023 elab2=4628 kernel=149 sdf=0)
+#  20:06, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: pulsegen (a)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5802 kB (elbread=1023 elab2=4628 kernel=149 sdf=0)
+#  20:08, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: pulsegen (a)
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5802 kB (elbread=1023 elab2=4628 kernel=149 sdf=0)
+#  20:08, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: pulsegen (a)
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5802 kB (elbread=1023 elab2=4628 kernel=149 sdf=0)
+#  20:08, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: pulsegen (a)
+acom -O3 -work tp5final -2002  $dsn/src/pulsegen.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\pulsegen.vhd
+# Compile Entity "pulsegen"
+# Compile Architecture "a" of Entity "pulsegen"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5802 kB (elbread=1023 elab2=4628 kernel=149 sdf=0)
+#  20:10, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: pulsegen (a)
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+pulsegen pulsegen a
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5802 kB (elbread=1023 elab2=4628 kernel=149 sdf=0)
+#  20:11, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: pulsegen (a)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+pulsegen pulsegen a
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5802 kB (elbread=1023 elab2=4628 kernel=149 sdf=0)
+#  20:13, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: pulsegen (a)
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+timer timer a
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  20:15, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+run 100 ns
+# KERNEL: stopped at time: 1 us
+run 100 ns
+# KERNEL: stopped at time: 1100 ns
+run 100 ns
+# KERNEL: stopped at time: 1200 ns
+run 100 ns
+# KERNEL: stopped at time: 1300 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  20:18, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  20:18, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  20:19, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+run 100 ns
+# KERNEL: stopped at time: 1 us
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  20:20, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  20:20, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  20:20, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+run 10 ns
+# KERNEL: stopped at time: 10 ns
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+timer timer a
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  20:21, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+run 10 ns
+# KERNEL: stopped at time: 10 ns
+run 10 ns
+# KERNEL: stopped at time: 20 ns
+run 10 ns
+# KERNEL: stopped at time: 30 ns
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+timer timer a
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  20:22, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+run 100 ns
+# KERNEL: stopped at time: 1 us
+run 100 ns
+# KERNEL: stopped at time: 1100 ns
+run 100 ns
+# KERNEL: stopped at time: 1200 ns
+run 100 ns
+# KERNEL: stopped at time: 1300 ns
+run 100 ns
+# KERNEL: stopped at time: 1400 ns
+run 1000 ns
+# KERNEL: stopped at time: 2400 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  20:26, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+run 1000 ns
+# KERNEL: stopped at time: 2 us
+run 1000 ns
+# KERNEL: stopped at time: 3 us
+run 1000 ns
+# KERNEL: stopped at time: 4 us
+run 1000 ns
+# KERNEL: stopped at time: 5 us
+run 1000 ns
+# KERNEL: stopped at time: 6 us
+run 1000 ns
+# KERNEL: stopped at time: 7 us
+run 1000 ns
+# KERNEL: stopped at time: 8 us
+run 1000 ns
+# KERNEL: stopped at time: 9 us
+run 1000 ns
+# KERNEL: stopped at time: 10 us
+run 1000 ns
+# KERNEL: stopped at time: 11 us
+run 1000 ns
+# KERNEL: stopped at time: 12 us
+run 1000 ns
+# KERNEL: stopped at time: 13 us
+run 1000 ns
+# KERNEL: stopped at time: 14 us
+run 1000 ns
+# KERNEL: stopped at time: 15 us
+run 1000 ns
+# KERNEL: stopped at time: 16 us
+run 1000 ns
+# KERNEL: stopped at time: 17 us
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  20:29, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  20:29, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+run 100 ns
+# KERNEL: stopped at time: 1 us
+run 100 ns
+# KERNEL: stopped at time: 1100 ns
+run 100 ns
+# KERNEL: stopped at time: 1200 ns
+run 100 ns
+# KERNEL: stopped at time: 1300 ns
+run 100 ns
+# KERNEL: stopped at time: 1400 ns
+run 100 ns
+# KERNEL: stopped at time: 1500 ns
+run 100 ns
+# KERNEL: stopped at time: 1600 ns
+run 100 ns
+# KERNEL: stopped at time: 1700 ns
+run 100 ns
+# KERNEL: stopped at time: 1800 ns
+run 100 ns
+# KERNEL: stopped at time: 1900 ns
+run 100 ns
+# KERNEL: stopped at time: 2 us
+run 1000 ns
+# KERNEL: stopped at time: 3 us
+run 1000 ns
+# KERNEL: stopped at time: 4 us
+run 1000 ns
+# KERNEL: stopped at time: 5 us
+run 1000 ns
+# KERNEL: stopped at time: 6 us
+run 1000 ns
+# KERNEL: stopped at time: 7 us
+run 1000 ns
+# KERNEL: stopped at time: 8 us
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  20:30, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+run 10 ns
+# KERNEL: stopped at time: 10 ns
+run 100 ns
+# KERNEL: stopped at time: 110 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  20:31, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  20:31, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+run 10 ns
+# KERNEL: stopped at time: 10 ns
+run 10 ns
+# KERNEL: stopped at time: 20 ns
+run 10 ns
+# KERNEL: stopped at time: 30 ns
+run 10 ns
+# KERNEL: stopped at time: 40 ns
+run 10 ns
+# KERNEL: stopped at time: 50 ns
+run 10 ns
+# KERNEL: stopped at time: 60 ns
+run 10 ns
+# KERNEL: stopped at time: 70 ns
+run 10 ns
+# KERNEL: stopped at time: 80 ns
+run 10 ns
+# KERNEL: stopped at time: 90 ns
+run 10 ns
+# KERNEL: stopped at time: 100 ns
+run 10 ns
+# KERNEL: stopped at time: 110 ns
+run 10 ns
+# KERNEL: stopped at time: 120 ns
+run 10 ns
+# KERNEL: stopped at time: 130 ns
+run 10 ns
+# KERNEL: stopped at time: 140 ns
+run 10 ns
+# KERNEL: stopped at time: 150 ns
+run 10 ns
+# KERNEL: stopped at time: 160 ns
+run 10 ns
+# KERNEL: stopped at time: 170 ns
+run 10 ns
+# KERNEL: stopped at time: 180 ns
+run 10 ns
+# KERNEL: stopped at time: 190 ns
+run 10 ns
+# KERNEL: stopped at time: 200 ns
+run 10 ns
+# KERNEL: stopped at time: 210 ns
+run 10 ns
+# KERNEL: stopped at time: 220 ns
+run 10 ns
+# KERNEL: stopped at time: 230 ns
+run 10 ns
+# KERNEL: stopped at time: 240 ns
+run 10 ns
+# KERNEL: stopped at time: 250 ns
+run 10 ns
+# KERNEL: stopped at time: 260 ns
+run 10 ns
+# KERNEL: stopped at time: 270 ns
+run 10 ns
+# KERNEL: stopped at time: 280 ns
+run 10 ns
+# KERNEL: stopped at time: 290 ns
+run 10 ns
+# KERNEL: stopped at time: 300 ns
+run 10 ns
+# KERNEL: stopped at time: 310 ns
+run 10 ns
+# KERNEL: stopped at time: 320 ns
+run 10 ns
+# KERNEL: stopped at time: 330 ns
+run 10 ns
+# KERNEL: stopped at time: 340 ns
+run 10 ns
+# KERNEL: stopped at time: 350 ns
+run 10 ns
+# KERNEL: stopped at time: 360 ns
+run 10 ns
+# KERNEL: stopped at time: 370 ns
+run 10 ns
+# KERNEL: stopped at time: 380 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  20:32, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+run 10 ns
+# KERNEL: stopped at time: 10 ns
+run 10 ns
+# KERNEL: stopped at time: 20 ns
+run 10 ns
+# KERNEL: stopped at time: 30 ns
+run 10 ns
+# KERNEL: stopped at time: 40 ns
+run 10 ns
+# KERNEL: stopped at time: 50 ns
+run 10 ns
+# KERNEL: stopped at time: 60 ns
+run 10 ns
+# KERNEL: stopped at time: 70 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  20:33, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  20:33, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+# Signal /pulsegen/clk not found in design.
+# Signal /pulsegen/btn not found in design.
+# Signal /pulsegen/pulse not found in design.
+run 50 ns
+# KERNEL: stopped at time: 50 ns
+run 50 ns
+# KERNEL: stopped at time: 100 ns
+run 50 ns
+# KERNEL: stopped at time: 150 ns
+run 1000 ns
+# KERNEL: stopped at time: 1150 ns
+run 1000 ns
+# KERNEL: stopped at time: 2150 ns
+run 1000 ns
+# KERNEL: stopped at time: 3150 ns
+run 1000 ns
+# KERNEL: stopped at time: 4150 ns
+run 1000 ns
+# KERNEL: stopped at time: 5150 ns
+run 1000 ns
+# KERNEL: stopped at time: 6150 ns
+run 1000 ns
+# KERNEL: stopped at time: 7150 ns
+run 1000 ns
+# KERNEL: stopped at time: 8150 ns
+run 1000 ns
+# KERNEL: stopped at time: 9150 ns
+run 1000 ns
+# KERNEL: stopped at time: 10150 ns
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+timer timer a
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  20:38, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+timekeeper timekeeper a
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6852 kB (elbread=1023 elab2=5678 kernel=149 sdf=0)
+#  20:43, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timekeeper (a)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+run 100 ns
+# KERNEL: stopped at time: 1 us
+run 100 ns
+# KERNEL: stopped at time: 1100 ns
+run 100 ns
+# KERNEL: stopped at time: 1200 ns
+run 100 ns
+# KERNEL: stopped at time: 1300 ns
+run 100 ns
+# KERNEL: stopped at time: 1400 ns
+run 100 ns
+# KERNEL: stopped at time: 1500 ns
+run 100 ns
+# KERNEL: stopped at time: 1600 ns
+run 100 ns
+# KERNEL: stopped at time: 1700 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6852 kB (elbread=1023 elab2=5678 kernel=149 sdf=0)
+#  20:47, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timekeeper (a)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 1000 ns
+# KERNEL: stopped at time: 1500 ns
+run 1000 ns
+# KERNEL: stopped at time: 2500 ns
+run 1000 ns
+# KERNEL: stopped at time: 3500 ns
+run 1000 ns
+# KERNEL: stopped at time: 4500 ns
+run 1000 ns
+# KERNEL: stopped at time: 5500 ns
+run 1000 ns
+# KERNEL: stopped at time: 6500 ns
+run 1000 ns
+# KERNEL: stopped at time: 7500 ns
+run 1000 ns
+# KERNEL: stopped at time: 8500 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6852 kB (elbread=1023 elab2=5678 kernel=149 sdf=0)
+#  20:49, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timekeeper (a)
+run 100000 ns
+# KERNEL: stopped at time: 100 us
+run 100000 ns
+# KERNEL: stopped at time: 200 us
+run 100000 ns
+# KERNEL: stopped at time: 300 us
+run 100000 ns
+# KERNEL: stopped at time: 400 us
+run 100000 ns
+# KERNEL: stopped at time: 500 us
+run 100000 ns
+# KERNEL: stopped at time: 600 us
+run 100000 ns
+# KERNEL: stopped at time: 700 us
+run 100000 ns
+# KERNEL: stopped at time: 800 us
+run 100000 ns
+# KERNEL: stopped at time: 900 us
+run 100000 ns
+# KERNEL: stopped at time: 1 ms
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6852 kB (elbread=1023 elab2=5678 kernel=149 sdf=0)
+#  20:52, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timekeeper (a)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6852 kB (elbread=1023 elab2=5678 kernel=149 sdf=0)
+#  20:54, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timekeeper (a)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6852 kB (elbread=1023 elab2=5678 kernel=149 sdf=0)
+#  20:55, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timekeeper (a)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6852 kB (elbread=1023 elab2=5678 kernel=149 sdf=0)
+#  21:17, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timekeeper (a)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6852 kB (elbread=1023 elab2=5678 kernel=149 sdf=0)
+#  21:17, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timekeeper (a)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6852 kB (elbread=1023 elab2=5678 kernel=149 sdf=0)
+#  21:18, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timekeeper (a)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 1000 ns
+# KERNEL: stopped at time: 1400 ns
+run 1000 ns
+# KERNEL: stopped at time: 2400 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6852 kB (elbread=1023 elab2=5678 kernel=149 sdf=0)
+#  21:20, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timekeeper (a)
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+run 1000 ns
+# KERNEL: stopped at time: 2 us
+run 1000 ns
+# KERNEL: stopped at time: 3 us
+run 1000 ns
+# KERNEL: stopped at time: 4 us
+run 1000 ns
+# KERNEL: stopped at time: 5 us
+run 1000 ns
+# KERNEL: stopped at time: 6 us
+run 1000 ns
+# KERNEL: stopped at time: 7 us
+run 1000 ns
+# KERNEL: stopped at time: 8 us
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6852 kB (elbread=1023 elab2=5678 kernel=149 sdf=0)
+#  21:21, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timekeeper (a)
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+run 1000 ns
+# KERNEL: stopped at time: 2 us
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6852 kB (elbread=1023 elab2=5678 kernel=149 sdf=0)
+#  21:22, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timekeeper (a)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+run 100 ns
+# KERNEL: stopped at time: 1 us
+run 100 ns
+# KERNEL: stopped at time: 1100 ns
+run 100 ns
+# KERNEL: stopped at time: 1200 ns
+run 100 ns
+# KERNEL: stopped at time: 1300 ns
+run 20 ns
+# KERNEL: stopped at time: 1320 ns
+run 20 ns
+# KERNEL: stopped at time: 1340 ns
+run 20 ns
+# KERNEL: stopped at time: 1360 ns
+run 20 ns
+# KERNEL: stopped at time: 1380 ns
+run 20 ns
+# KERNEL: stopped at time: 1400 ns
+run 20 ns
+# KERNEL: stopped at time: 1420 ns
+run 20 ns
+# KERNEL: stopped at time: 1440 ns
+run 20 ns
+# KERNEL: stopped at time: 1460 ns
+run 20 ns
+# KERNEL: stopped at time: 1480 ns
+run 20 ns
+# KERNEL: stopped at time: 1500 ns
+run 20 ns
+# KERNEL: stopped at time: 1520 ns
+run 20 ns
+# KERNEL: stopped at time: 1540 ns
+run 20 ns
+# KERNEL: stopped at time: 1560 ns
+run 20 ns
+# KERNEL: stopped at time: 1580 ns
+run 5 ns
+# KERNEL: stopped at time: 1585 ns
+run 5 ns
+# KERNEL: stopped at time: 1590 ns
+run 5 ns
+# KERNEL: stopped at time: 1595 ns
+run 5 ns
+# KERNEL: stopped at time: 1600 ns
+run 5 ns
+# KERNEL: stopped at time: 1605 ns
+run 5 ns
+# KERNEL: stopped at time: 1610 ns
+run 5 ns
+# KERNEL: stopped at time: 1615 ns
+run 5 ns
+# KERNEL: stopped at time: 1620 ns
+run 5 ns
+# KERNEL: stopped at time: 1625 ns
+run 100ns
+# KERNEL: stopped at time: 1725 ns
+run 100ns
+# KERNEL: stopped at time: 1825 ns
+run 100ns
+# KERNEL: stopped at time: 1925 ns
+run 100ns
+# KERNEL: stopped at time: 2025 ns
+run 100ns
+# KERNEL: stopped at time: 2125 ns
+run 100ns
+# KERNEL: stopped at time: 2225 ns
+run 100ns
+# KERNEL: stopped at time: 2325 ns
+run 100ns
+# KERNEL: stopped at time: 2425 ns
+run 100ns
+# KERNEL: stopped at time: 2525 ns
+run 100ns
+# KERNEL: stopped at time: 2625 ns
+run 100ns
+# KERNEL: stopped at time: 2725 ns
+run 1000ns
+# KERNEL: stopped at time: 3725 ns
+run 1000ns
+# KERNEL: stopped at time: 4725 ns
+run 1000ns
+# KERNEL: stopped at time: 5725 ns
+run 1000ns
+# KERNEL: stopped at time: 6725 ns
+run 1000ns
+# KERNEL: stopped at time: 7725 ns
+run 1000ns
+# KERNEL: stopped at time: 8725 ns
+run 1000ns
+# KERNEL: stopped at time: 9725 ns
+run 1000ns
+# KERNEL: stopped at time: 10725 ns
+run 1000ns
+# KERNEL: stopped at time: 11725 ns
+run 10000ns
+# KERNEL: stopped at time: 21725 ns
+run 10000ns
+# KERNEL: stopped at time: 31725 ns
+run 10000ns
+# KERNEL: stopped at time: 41725 ns
+run 10000ns
+# KERNEL: stopped at time: 51725 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6852 kB (elbread=1023 elab2=5678 kernel=149 sdf=0)
+#  21:40, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timekeeper (a)
+run 100ns
+# KERNEL: stopped at time: 100 ns
+run 100ns
+# KERNEL: stopped at time: 200 ns
+run 100ns
+# KERNEL: stopped at time: 300 ns
+run 100ns
+# KERNEL: stopped at time: 400 ns
+run 100ns
+# KERNEL: stopped at time: 500 ns
+run 100ns
+# KERNEL: stopped at time: 600 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6852 kB (elbread=1023 elab2=5678 kernel=149 sdf=0)
+#  21:42, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timekeeper (a)
+run 100ns
+# KERNEL: stopped at time: 100 ns
+run 100ns
+# KERNEL: stopped at time: 200 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6852 kB (elbread=1023 elab2=5678 kernel=149 sdf=0)
+#  21:43, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timekeeper (a)
+run 100ns
+# KERNEL: stopped at time: 100 ns
+run 100ns
+# KERNEL: stopped at time: 200 ns
+run 100ns
+# KERNEL: stopped at time: 300 ns
+run 100ns
+# KERNEL: stopped at time: 400 ns
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+timer timer a
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  21:45, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+run 100ns
+# KERNEL: stopped at time: 100 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  21:45, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+run 100ns
+# KERNEL: stopped at time: 100 ns
+run 100ns
+# KERNEL: stopped at time: 200 ns
+run 100ns
+# KERNEL: stopped at time: 300 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  21:46, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+run 100ns
+# KERNEL: stopped at time: 100 ns
+run 100ns
+# KERNEL: stopped at time: 200 ns
+run 100ns
+# KERNEL: stopped at time: 300 ns
+endsim
+#  Simulation has been stopped
+acom -O3 -work tp5final -2002  $dsn/src/top.bde
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\top.vhd
+# Compile Entity "top"
+# Compile Architecture "top" of Entity "top"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# Running synthesis...
+# Warning: Synthesis: 0 errors, 23 warning(s)
+# Checking if synthesis needs to be updated...
+# Checking if implementation needs to be updated...
+# File "C:\Users\taara\tp5final\tp5final\synthesis\top.ngc" has been modified after last implementation run.
+# Implementation has been started.
+# Implementation ver1->rev1: 0 error(s), 7 warning(s).
+# Warning: Implementation ended with warning(s).
+# Launching iMPACT.
+# iMPACT has been launched.
+acom -O3 -work tp5final -2002  $dsn/src/pulsegen.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\pulsegen.vhd
+# Compile Entity "pulsegen"
+# Compile Architecture "a" of Entity "pulsegen"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/pulsegen.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\pulsegen.vhd
+# Compile Entity "pulsegen"
+# Compile Architecture "a" of Entity "pulsegen"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/timekeeper.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\timekeeper.vhd
+# Compile Entity "timekeeper"
+# Compile Architecture "a" of Entity "timekeeper"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/pulsegen.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\pulsegen.vhd
+# Compile Entity "pulsegen"
+# Compile Architecture "a" of Entity "pulsegen"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+# Running synthesis...
+# Warning: Synthesis: 0 errors, 23 warning(s)
+# Checking if synthesis needs to be updated...
+# Checking if implementation needs to be updated...
+# File "C:\Users\taara\tp5final\tp5final\synthesis\top.ngc" has been modified after last implementation run.
+# Implementation has been started.
+# Implementation ver1->rev1: 0 error(s), 7 warning(s).
+# Warning: Implementation ended with warning(s).
+# Launching iMPACT.
+# iMPACT has been launched.
+acom -O3 -work tp5final -2002  $dsn/src/pulsegen.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\pulsegen.vhd
+# Compile Entity "pulsegen"
+# Compile Architecture "a" of Entity "pulsegen"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -work tp5final -2002  $dsn/src/top.bde
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\top.vhd
+# Compile Entity "top"
+# Compile Architecture "top" of Entity "top"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# Running synthesis...
+# Warning: Synthesis: 0 errors, 23 warning(s)
+# Checking if synthesis needs to be updated...
+# Checking if implementation needs to be updated...
+# File "C:\Users\taara\tp5final\tp5final\synthesis\top.ngc" has been modified after last implementation run.
+# Implementation has been started.
+# Implementation ver1->rev1: 0 error(s), 7 warning(s).
+# Warning: Implementation ended with warning(s).
+# Launching iMPACT.
+# iMPACT has been launched.
+asim -O5 +access +r +m+timer timer a
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6850 kB (elbread=1023 elab2=5677 kernel=149 sdf=0)
+#  22:16, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: timer (a)
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+pulsegen pulsegen a
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5801 kB (elbread=1023 elab2=4628 kernel=149 sdf=0)
+#  22:17, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: pulsegen (a)
+run 100ns
+# KERNEL: stopped at time: 100 ns
+run 100ns
+# KERNEL: stopped at time: 200 ns
+run 100ns
+# KERNEL: stopped at time: 300 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5801 kB (elbread=1023 elab2=4628 kernel=149 sdf=0)
+#  22:18, 8 avril 2016
+#  Simulation has been initialized
+#  Selected Top-Level: pulsegen (a)
+run 100ns
+# KERNEL: stopped at time: 100 ns
+run 100ns
+# KERNEL: stopped at time: 200 ns
+run 100ns
+# KERNEL: stopped at time: 300 ns
+acom -O3 -work tp5final -2002  $dsn/src/oventimetimerfsm.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\taara\tp5final\tp5final\src\oventimetimerfsm.vhd
+# Compile Entity "oventimetimerfsm"
+# Compile Architecture "a" of Entity "oventimetimerfsm"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+#  Simulation has been stopped

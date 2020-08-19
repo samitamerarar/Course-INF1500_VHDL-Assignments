@@ -1,0 +1,10 @@
+# sorties
+
+net "D1" loc = "AG8";  # DEL 0
+net "D2" loc = "AH8";  # DEL 0
+# entrées
+net "A(0)" LOC = "J19";   # interrupteur 0
+net "A(1)" LOC = "L18";   # interrupteur 1
+net "A(2)" LOC = "K18";   # interrupteur 2
+net "A(3)" LOC = "H18";   # interrupteur 3
+net "En" LOC = "G15";   # interrupteur 0

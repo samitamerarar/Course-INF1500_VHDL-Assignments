@@ -1,0 +1,21 @@
+net clk loc = ag18;
+net clk tnm_net = clk;
+timespec ts_clk = period "clk" 100 MHz HIGH 50%;
+
+net reset loc = g6;
+net hd44780_en loc = aa5;
+net hd44780_rs loc = v7;
+net hd44780_rw loc = w6;
+net hd44780_db<0> loc = y8;
+net hd44780_db<1> loc = ab7;
+net hd44780_db<2> loc = ab5;
+net hd44780_db<3> loc = ac4;
+net hd44780_db<4> loc = ab6;
+net hd44780_db<5> loc = ac5;
+net hd44780_db<6> loc = ac7;
+net hd44780_db<7> loc = ad7;
+net entree<3> loc = h18;
+net entree<2> loc = k18;
+net entree<1> loc = l18;
+net entree<0> loc = j19;
+net sel loc = k17;

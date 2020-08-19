@@ -1,0 +1,17 @@
+.\src\asciizero2space.vhd
+.\src\bcd2ascii.vhd
+.\src\bin2bcd2d.vhd
+.\src\buzzer.vhd
+.\src\clk1hz.vhd
+.\src\colongen.vhd
+.\src\deb.vhd
+.\src\hd44780_8chars_2lines.vhd
+.\src\hd44780_simple.vhd
+.\src\oventimetimerfsm.vhd
+.\src\pulsegen.vhd
+.\src\spacegen.vhd
+.\src\timekeeper.vhd
+.\src\timer.vhd
+.\src\top.bde
+.\synthesis\top.vhd
+.\IMPLEMENT\TIME_SIM.VHD

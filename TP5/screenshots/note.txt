@@ -1,0 +1,19 @@
+timekeeper
+Prouver que reset (g)
+Prouver que set = 1 temps arrête avancé (g)
+Prouver que après 23h en ajustement -> 0 (g)
+Prouver que après 60min en ajustement -> 0 (g)
+Prouver que heure maj après ajustement (g)
+Prouver que après 59sec en horloge -> 0 (g)
+Prouver que après 23h en horloge -> 0 (g)
+Prouver que après 60min en horloge -> 0 (g)
+Prouver que horloge avance toute seul (g)
+
+
+Prouver que set = 1 temps arrête avancé (g)
+Prouver que après 90min en ajustement -> 0 (g)
+Prouver que après 0sec en horloge -> 0 (g)
+Prouver que après 0sec en horloge -> 0 (g)
+
+
+
