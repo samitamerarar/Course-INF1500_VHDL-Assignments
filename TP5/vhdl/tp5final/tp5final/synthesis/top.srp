@@ -1,0 +1,812 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to .
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to C:\Users\taara\tp5final\tp5final\synthesis\xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : no
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc5vlx50tff1136-1
+
+---- Source Options
+Top Module Name                    : top
+Generics, Parameters               : {  }
+Verilog Macros                     : {  }
+Automatic FSM Extraction           : yes
+FSM Encoding Algorithm             : Auto
+Resource Sharing                   : yes
+FSM Style                          : lut
+RAM Extraction                     : yes
+RAM Style                          : auto
+ROM Extraction                     : yes
+ROM Style                          : auto
+Mux Extraction                     : yes
+Mux Style                          : auto
+Decoder Extraction                 : yes
+Priority Encoder Extraction        : yes
+Shift Register Extraction          : yes
+Logical Shifter Extraction         : yes
+XOR Collapsing                     : yes
+Use DSP Block                      : auto
+Asynchronous To Synchronous        : no
+Automatic Register Balancing       : no
+Safe Implementation                : no
+
+---- Target Options
+Add IO Buffers                     : yes
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : yes
+Equivalent register Removal        : yes
+Pack IO Registers into IOBs        : auto
+LUT Combining                      : off
+Reduce Control Sets                : off
+Slice Packing                      : yes
+Optimize Instantiated Primitives   : no
+Use Clock Enable                   : auto
+Use Synchronous Set                : auto
+Use Synchronous Reset              : auto
+
+---- General Options
+Optimization Goal                  : speed
+Optimization Effort                : 1
+Power Reduction                    : no
+Global Optimization                : allclocknets
+RTL Output                         : yes
+Write Timing Constraints           : no
+Verilog 2001                       : yes
+Keep Hierarchy                     : no
+Netlist Hierarchy                  : as_optimized
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Cross Clock Analysis               : no
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Read Cores                         : yes
+Auto BRAM Packing                  : no
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/taara/tp5final/tp5final/src/hd44780_simple.vhd" in Library tp5final.
+Architecture arch of Entity hd44780_simple is up to date.
+Compiling vhdl file "C:/Users/taara/tp5final/tp5final/src/clk1hz.vhd" in Library tp5final.
+Architecture a of Entity clk1hz is up to date.
+Compiling vhdl file "C:/Users/taara/tp5final/tp5final/src/bcd2ascii.vhd" in Library tp5final.
+Architecture a of Entity bcd2ascii is up to date.
+Compiling vhdl file "C:/Users/taara/tp5final/tp5final/src/asciizero2space.vhd" in Library tp5final.
+Architecture a of Entity asciizero2space is up to date.
+Compiling vhdl file "C:/Users/taara/tp5final/tp5final/src/bin2bcd2d.vhd" in Library tp5final.
+Architecture a of Entity bin2bcd2d is up to date.
+Compiling vhdl file "C:/Users/taara/tp5final/tp5final/src/pulsegen.vhd" in Library tp5final.
+Entity <pulsegen> compiled.
+Entity <pulsegen> (Architecture <a>) compiled.
+Compiling vhdl file "C:/Users/taara/tp5final/tp5final/src/deb.vhd" in Library tp5final.
+Architecture a of Entity deb is up to date.
+Compiling vhdl file "C:/Users/taara/tp5final/tp5final/src/timekeeper.vhd" in Library tp5final.
+Architecture a of Entity timekeeper is up to date.
+Compiling vhdl file "C:/Users/taara/tp5final/tp5final/src/hd44780_8chars_2lines.vhd" in Library tp5final.
+Architecture arch of Entity hd44780_8chars_2lines is up to date.
+Compiling vhdl file "C:/Users/taara/tp5final/tp5final/src/spacegen.vhd" in Library tp5final.
+Architecture a of Entity spacegen is up to date.
+Compiling vhdl file "C:/Users/taara/tp5final/tp5final/src/buzzer.vhd" in Library tp5final.
+Architecture a of Entity buzzer is up to date.
+Compiling vhdl file "C:/Users/taara/tp5final/tp5final/src/timer.vhd" in Library tp5final.
+Architecture a of Entity timer is up to date.
+Compiling vhdl file "C:/Users/taara/tp5final/tp5final/src/oventimetimerfsm.vhd" in Library tp5final.
+Architecture a of Entity oventimetimerfsm is up to date.
+Compiling vhdl file "C:/Users/taara/tp5final/tp5final/src/colongen.vhd" in Library tp5final.
+Architecture a of Entity colongen is up to date.
+Compiling vhdl file "C:/Users/taara/tp5final/tp5final/compile/top.vhd" in Library tp5final.
+Architecture top of Entity top is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <top> in library <tp5final> (architecture <top>).
+
+Analyzing hierarchy for entity <clk1hz> in library <tp5final> (architecture <a>).
+
+Analyzing hierarchy for entity <bcd2ascii> in library <tp5final> (architecture <a>).
+
+Analyzing hierarchy for entity <asciizero2space> in library <tp5final> (architecture <a>).
+
+Analyzing hierarchy for entity <bin2bcd2d> in library <tp5final> (architecture <a>).
+
+Analyzing hierarchy for entity <pulsegen> in library <tp5final> (architecture <a>).
+
+Analyzing hierarchy for entity <deb> in library <tp5final> (architecture <a>).
+
+Analyzing hierarchy for entity <timekeeper> in library <tp5final> (architecture <a>).
+
+Analyzing hierarchy for entity <hd44780_8chars_2lines> in library <tp5final> (architecture <arch>).
+
+Analyzing hierarchy for entity <spacegen> in library <tp5final> (architecture <a>).
+
+Analyzing hierarchy for entity <buzzer> in library <tp5final> (architecture <a>).
+
+Analyzing hierarchy for entity <timer> in library <tp5final> (architecture <a>).
+
+Analyzing hierarchy for entity <oventimetimerfsm> in library <tp5final> (architecture <a>).
+
+Analyzing hierarchy for entity <colongen> in library <tp5final> (architecture <a>).
+
+Analyzing hierarchy for entity <hd44780_simple> in library <tp5final> (architecture <arch>) with generics.
+	CHARS_PER_LINE = 8
+	CLK_FREQ = 100000000
+	LINE1_ADDR_OFFSET = 4
+	LINE2_ADDR_OFFSET = 44
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <top> in library <tp5final> (Architecture <top>).
+Entity <top> analyzed. Unit <top> generated.
+
+Analyzing Entity <clk1hz> in library <tp5final> (Architecture <a>).
+Entity <clk1hz> analyzed. Unit <clk1hz> generated.
+
+Analyzing Entity <bcd2ascii> in library <tp5final> (Architecture <a>).
+Entity <bcd2ascii> analyzed. Unit <bcd2ascii> generated.
+
+Analyzing Entity <asciizero2space> in library <tp5final> (Architecture <a>).
+Entity <asciizero2space> analyzed. Unit <asciizero2space> generated.
+
+Analyzing Entity <bin2bcd2d> in library <tp5final> (Architecture <a>).
+Entity <bin2bcd2d> analyzed. Unit <bin2bcd2d> generated.
+
+Analyzing Entity <pulsegen> in library <tp5final> (Architecture <a>).
+Entity <pulsegen> analyzed. Unit <pulsegen> generated.
+
+Analyzing Entity <deb> in library <tp5final> (Architecture <a>).
+Entity <deb> analyzed. Unit <deb> generated.
+
+Analyzing Entity <timekeeper> in library <tp5final> (Architecture <a>).
+WARNING:Xst:819 - "C:/Users/taara/tp5final/tp5final/src/timekeeper.vhd" line 28: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <rst>
+Entity <timekeeper> analyzed. Unit <timekeeper> generated.
+
+Analyzing Entity <hd44780_8chars_2lines> in library <tp5final> (Architecture <arch>).
+Entity <hd44780_8chars_2lines> analyzed. Unit <hd44780_8chars_2lines> generated.
+
+Analyzing generic Entity <hd44780_simple> in library <tp5final> (Architecture <arch>).
+	CHARS_PER_LINE = 8
+	CLK_FREQ = 100000000
+	LINE1_ADDR_OFFSET = 4
+	LINE2_ADDR_OFFSET = 44
+Entity <hd44780_simple> analyzed. Unit <hd44780_simple> generated.
+
+Analyzing Entity <spacegen> in library <tp5final> (Architecture <a>).
+Entity <spacegen> analyzed. Unit <spacegen> generated.
+
+Analyzing Entity <buzzer> in library <tp5final> (Architecture <a>).
+Entity <buzzer> analyzed. Unit <buzzer> generated.
+
+Analyzing Entity <timer> in library <tp5final> (Architecture <a>).
+WARNING:Xst:819 - "C:/Users/taara/tp5final/tp5final/src/timer.vhd" line 24: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <rst>
+Entity <timer> analyzed. Unit <timer> generated.
+
+Analyzing Entity <oventimetimerfsm> in library <tp5final> (Architecture <a>).
+WARNING:Xst:819 - "C:/Users/taara/tp5final/tp5final/src/oventimetimerfsm.vhd" line 32: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <rst>
+Entity <oventimetimerfsm> analyzed. Unit <oventimetimerfsm> generated.
+
+Analyzing Entity <colongen> in library <tp5final> (Architecture <a>).
+Entity <colongen> analyzed. Unit <colongen> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clk1hz>.
+    Related source file is "C:/Users/taara/tp5final/tp5final/src/clk1hz.vhd".
+    Found 1-bit register for signal <clk_1hz>.
+    Found 32-bit up counter for signal <count>.
+    Found 32-bit adder for signal <count$add0000> created at line 19.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <clk1hz> synthesized.
+
+
+Synthesizing Unit <bcd2ascii>.
+    Related source file is "C:/Users/taara/tp5final/tp5final/src/bcd2ascii.vhd".
+    Found 8-bit adder for signal <ascii>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <bcd2ascii> synthesized.
+
+
+Synthesizing Unit <asciizero2space>.
+    Related source file is "C:/Users/taara/tp5final/tp5final/src/asciizero2space.vhd".
+Unit <asciizero2space> synthesized.
+
+
+Synthesizing Unit <bin2bcd2d>.
+    Related source file is "C:/Users/taara/tp5final/tp5final/src/bin2bcd2d.vhd".
+    Found 4-bit comparator greater for signal <scratch_10$cmp_gt0000> created at line 32.
+    Found 4-bit comparator greater for signal <scratch_10$cmp_gt0001> created at line 32.
+    Found 4-bit comparator greater for signal <scratch_10$cmp_gt0002> created at line 32.
+    Found 4-bit comparator greater for signal <scratch_10$cmp_gt0003> created at line 32.
+    Found 4-bit adder for signal <scratch_10_7$add0000> created at line 33.
+    Found 4-bit adder for signal <scratch_10_7$add0001> created at line 33.
+    Found 4-bit adder for signal <scratch_10_7$add0002> created at line 33.
+    Found 4-bit adder for signal <scratch_10_7$add0003> created at line 33.
+    Found 4-bit comparator greater for signal <scratch_13$cmp_gt0000> created at line 29.
+    Found 4-bit adder for signal <scratch_14_11$add0000> created at line 30.
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred   5 Comparator(s).
+Unit <bin2bcd2d> synthesized.
+
+
+Synthesizing Unit <pulsegen>.
+    Related source file is "C:/Users/taara/tp5final/tp5final/src/pulsegen.vhd".
+    Found 1-bit register for signal <pulse>.
+    Found 1-bit register for signal <state<0>>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <pulsegen> synthesized.
+
+
+Synthesizing Unit <deb>.
+    Related source file is "C:/Users/taara/tp5final/tp5final/src/deb.vhd".
+    Found 1-bit register for signal <pb_deb>.
+    Found 1-bit register for signal <clk_deb>.
+    Found 20-bit up counter for signal <count_per>.
+    Found 1-bit xor2 for signal <pb_deb$xor0000> created at line 39.
+    Found 1-bit register for signal <pb_sampled>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   3 D-type flip-flop(s).
+Unit <deb> synthesized.
+
+
+Synthesizing Unit <timekeeper>.
+    Related source file is "C:/Users/taara/tp5final/tp5final/src/timekeeper.vhd".
+    Found 7-bit register for signal <ch>.
+    Found 7-bit adder for signal <ch$add0000> created at line 39.
+    Found 7-bit register for signal <cm>.
+    Found 7-bit adder for signal <cm$addsub0000> created at line 45.
+    Found 7-bit up counter for signal <cs>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  14 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <timekeeper> synthesized.
+
+
+Synthesizing Unit <spacegen>.
+    Related source file is "C:/Users/taara/tp5final/tp5final/src/spacegen.vhd".
+Unit <spacegen> synthesized.
+
+
+Synthesizing Unit <buzzer>.
+    Related source file is "C:/Users/taara/tp5final/tp5final/src/buzzer.vhd".
+    Found 4-bit register for signal <leds>.
+    Found 32-bit up counter for signal <cnt>.
+    Found 4-bit register for signal <o>.
+    Found 32-bit adder for signal <o_0$add0000> created at line 22.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <buzzer> synthesized.
+
+
+Synthesizing Unit <timer>.
+    Related source file is "C:/Users/taara/tp5final/tp5final/src/timer.vhd".
+    Found 7-bit register for signal <cm>.
+    Found 7-bit addsub for signal <cm$share0000>.
+    Found 7-bit down counter for signal <cs>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   7 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <timer> synthesized.
+
+
+Synthesizing Unit <oventimetimerfsm>.
+    Related source file is "C:/Users/taara/tp5final/tp5final/src/oventimetimerfsm.vhd".
+    Found finite state machine <FSM_0> for signal <cur_state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Power Up State     | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <reset_timer>.
+    Found 1-bit register for signal <oven>.
+    Found 1-bit register for signal <reset_time>.
+    Found 1-bit register for signal <buzz>.
+    Found 1-bit register for signal <set_time>.
+    Found 1-bit register for signal <set_timer>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   6 D-type flip-flop(s).
+Unit <oventimetimerfsm> synthesized.
+
+
+Synthesizing Unit <colongen>.
+    Related source file is "C:/Users/taara/tp5final/tp5final/src/colongen.vhd".
+Unit <colongen> synthesized.
+
+
+Synthesizing Unit <hd44780_simple>.
+    Related source file is "C:/Users/taara/tp5final/tp5final/src/hd44780_simple.vhd".
+    Register <hd44780_en> equivalent to <en_started<0>> has been removed
+    Found finite state machine <FSM_1> for signal <timer_called_cnt>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 40                                             |
+    | Inputs             | 14                                             |
+    | Outputs            | 2                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | reset                     (negative)           |
+    | Power Up State     | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Using one-hot encoding for signal <cur_state>.
+    Found 1-bit register for signal <hd44780_rs>.
+    Found 8-bit register for signal <hd44780_db>.
+    Found 4-bit adder for signal <addr$add0000> created at line 269.
+    Found 6-bit adder for signal <addr$add0001> created at line 272.
+    Found 1-bit register for signal <clk_us>.
+    Found 7-bit up counter for signal <count>.
+    Found 4-bit register for signal <cur_ddram_addr>.
+    Found 4-bit adder for signal <cur_ddram_addr$addsub0000> created at line 308.
+    Found 1-bit register for signal <cur_line<0>>.
+    Found 13-bit register for signal <cur_state>.
+    Found 5-bit comparator greater for signal <cur_state$cmp_gt0000> created at line 158.
+    Found 5-bit register for signal <en_count>.
+    Found 5-bit subtractor for signal <en_count$addsub0000> created at line 159.
+    Found 1-bit register for signal <en_started<0>>.
+    Found 13-bit register for signal <next_state>.
+    Found 1-bit register for signal <running<0>>.
+    Found 16-bit comparator greater for signal <running_0$cmp_gt0000> created at line 124.
+    Found 1-bit register for signal <state2timer_go>.
+    Found 1-bit register for signal <timer2state_done>.
+    Found 16-bit register for signal <timer_us_value>.
+    Found 16-bit down counter for signal <valuez>.
+    Found 16-bit comparator lessequal for signal <valuez$cmp_le0000> created at line 124.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Counter(s).
+	inferred  53 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <hd44780_simple> synthesized.
+
+
+Synthesizing Unit <hd44780_8chars_2lines>.
+    Related source file is "C:/Users/taara/tp5final/tp5final/src/hd44780_8chars_2lines.vhd".
+Unit <hd44780_8chars_2lines> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "C:/Users/taara/tp5final/tp5final/compile/top.vhd".
+Unit <top> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 44
+ 32-bit adder                                          : 2
+ 4-bit adder                                           : 27
+ 5-bit subtractor                                      : 1
+ 6-bit adder                                           : 1
+ 7-bit adder                                           : 2
+ 7-bit addsub                                          : 1
+ 8-bit adder                                           : 10
+# Counters                                             : 11
+ 16-bit down counter                                   : 1
+ 20-bit up counter                                     : 5
+ 32-bit up counter                                     : 2
+ 7-bit down counter                                    : 1
+ 7-bit up counter                                      : 2
+# Registers                                            : 53
+ 1-bit register                                        : 43
+ 13-bit register                                       : 2
+ 16-bit register                                       : 1
+ 4-bit register                                        : 2
+ 5-bit register                                        : 1
+ 7-bit register                                        : 3
+ 8-bit register                                        : 1
+# Comparators                                          : 28
+ 16-bit comparator greater                             : 1
+ 16-bit comparator lessequal                           : 1
+ 4-bit comparator greater                              : 25
+ 5-bit comparator greater                              : 1
+# Xors                                                 : 5
+ 1-bit xor2                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <U30/my_hd44780_simple/timer_called_cnt/FSM> on signal <timer_called_cnt[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <U37/cur_state/FSM> on signal <cur_state[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 011
+ 011   | 010
+ 100   | 110
+-------------------
+WARNING:Xst:1290 - Hierarchical block <U31> is unconnected in block <top>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <U4> is unconnected in block <top>.
+   It will be removed from the design.
+WARNING:Xst:1293 - FF/Latch <next_state_1> has a constant value of 0 in block <my_hd44780_simple>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <next_state_2> has a constant value of 0 in block <my_hd44780_simple>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <timer_us_value_1> has a constant value of 0 in block <my_hd44780_simple>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <timer_us_value_10> has a constant value of 0 in block <my_hd44780_simple>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <timer_us_value_12> has a constant value of 0 in block <my_hd44780_simple>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <timer_us_value_14> has a constant value of 0 in block <my_hd44780_simple>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# Adders/Subtractors                                   : 44
+ 3-bit adder                                           : 5
+ 32-bit adder                                          : 2
+ 4-bit adder                                           : 22
+ 5-bit subtractor                                      : 1
+ 6-bit adder                                           : 1
+ 7-bit adder                                           : 2
+ 7-bit addsub                                          : 1
+ 8-bit adder                                           : 10
+# Counters                                             : 11
+ 16-bit down counter                                   : 1
+ 20-bit up counter                                     : 5
+ 32-bit up counter                                     : 2
+ 7-bit down counter                                    : 1
+ 7-bit up counter                                      : 2
+# Registers                                            : 127
+ Flip-Flops                                            : 127
+# Comparators                                          : 28
+ 16-bit comparator greater                             : 1
+ 16-bit comparator lessequal                           : 1
+ 4-bit comparator greater                              : 25
+ 5-bit comparator greater                              : 1
+# Xors                                                 : 5
+ 1-bit xor2                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <timer_us_value_1> has a constant value of 0 in block <hd44780_simple>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_us_value_10> has a constant value of 0 in block <hd44780_simple>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_us_value_12> has a constant value of 0 in block <hd44780_simple>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_us_value_14> has a constant value of 0 in block <hd44780_simple>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <next_state_1> has a constant value of 0 in block <hd44780_simple>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <next_state_2> has a constant value of 0 in block <hd44780_simple>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <top> ...
+
+Optimizing unit <clk1hz> ...
+
+Optimizing unit <bin2bcd2d> ...
+
+Optimizing unit <deb> ...
+
+Optimizing unit <timekeeper> ...
+
+Optimizing unit <buzzer> ...
+
+Optimizing unit <timer> ...
+WARNING:Xst:1293 - FF/Latch <cs_6> has a constant value of 0 in block <timer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cs_6> has a constant value of 0 in block <timer>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <oventimetimerfsm> ...
+
+Optimizing unit <hd44780_simple> ...
+WARNING:Xst:1293 - FF/Latch <cur_ddram_addr_3> has a constant value of 0 in block <hd44780_simple>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cur_ddram_addr_3> has a constant value of 0 in block <hd44780_simple>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cur_ddram_addr_3> has a constant value of 0 in block <hd44780_simple>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <U30/my_hd44780_simple/hd44780_db_6> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 324
+ Flip-Flops                                            : 324
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 25
+
+Cell Usage :
+# BELS                             : 1201
+#      GND                         : 1
+#      INV                         : 27
+#      LUT1                        : 219
+#      LUT2                        : 153
+#      LUT3                        : 37
+#      LUT4                        : 79
+#      LUT5                        : 55
+#      LUT6                        : 140
+#      MUXCY                       : 234
+#      MUXF7                       : 11
+#      VCC                         : 1
+#      XORCY                       : 244
+# FlipFlops/Latches                : 324
+#      FD                          : 65
+#      FDC                         : 128
+#      FDCE                        : 52
+#      FDE                         : 63
+#      FDP                         : 3
+#      FDR                         : 9
+#      FDRE                        : 2
+#      FDSE                        : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 24
+#      IBUF                        : 6
+#      OBUF                        : 18
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vlx50tff1136-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             324  out of  28800     1%  
+ Number of Slice LUTs:                  710  out of  28800     2%  
+    Number used as Logic:               710  out of  28800     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    722
+   Number with an unused Flip Flop:     398  out of    722    55%  
+   Number with an unused LUT:            12  out of    722     1%  
+   Number of fully used LUT-FF pairs:   312  out of    722    43%  
+   Number of unique control sets:        32
+
+IO Utilization: 
+ Number of IOs:                          25
+ Number of bonded IOBs:                  25  out of    480     5%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 324   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 149   |
+U37/reset_time(U37/reset_time:Q)   | NONE(U2/ch_0)          | 21    |
+U37/reset_timer(U37/reset_timer:Q) | NONE(U36/cm_0)         | 13    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 4.978ns (Maximum Frequency: 200.872MHz)
+   Minimum input arrival time before clock: 2.220ns
+   Maximum output required time after clock: 3.330ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.978ns (frequency: 200.872MHz)
+  Total number of paths / destination ports: 54045 / 392
+-------------------------------------------------------------------------
+Delay:               4.978ns (Levels of Logic = 14)
+  Source:            U34/cnt_0 (FF)
+  Destination:       U34/cnt_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: U34/cnt_0 to U34/cnt_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.471   0.341  U34/cnt_0 (U34/cnt_0)
+     INV:I->O              1   0.238   0.000  U34/Madd_o_0_add0000_lut<0>_INV_0 (U34/Madd_o_0_add0000_lut<0>)
+     MUXCY:S->O            1   0.372   0.000  U34/Madd_o_0_add0000_cy<0> (U34/Madd_o_0_add0000_cy<0>)
+     MUXCY:CI->O           1   0.026   0.000  U34/Madd_o_0_add0000_cy<1> (U34/Madd_o_0_add0000_cy<1>)
+     MUXCY:CI->O           1   0.026   0.000  U34/Madd_o_0_add0000_cy<2> (U34/Madd_o_0_add0000_cy<2>)
+     MUXCY:CI->O           1   0.026   0.000  U34/Madd_o_0_add0000_cy<3> (U34/Madd_o_0_add0000_cy<3>)
+     MUXCY:CI->O           1   0.026   0.000  U34/Madd_o_0_add0000_cy<4> (U34/Madd_o_0_add0000_cy<4>)
+     MUXCY:CI->O           1   0.026   0.000  U34/Madd_o_0_add0000_cy<5> (U34/Madd_o_0_add0000_cy<5>)
+     MUXCY:CI->O           1   0.026   0.000  U34/Madd_o_0_add0000_cy<6> (U34/Madd_o_0_add0000_cy<6>)
+     MUXCY:CI->O           1   0.026   0.000  U34/Madd_o_0_add0000_cy<7> (U34/Madd_o_0_add0000_cy<7>)
+     XORCY:CI->O           2   0.357   0.581  U34/Madd_o_0_add0000_xor<8> (U34/o_0_add0000<8>)
+     LUT2:I0->O            1   0.094   0.480  U34/o_0_cmp_eq0000185_SW0 (N54)
+     LUT6:I5->O            1   0.094   0.973  U34/o_0_cmp_eq0000221_SW0 (N46)
+     LUT6:I1->O           32   0.094   0.607  U34/cnt_or00001 (U34/cnt_or0000)
+     LUT2:I1->O            1   0.094   0.000  U34/cnt_31_rstpot (U34/cnt_31_rstpot)
+     FD:D                     -0.018          U34/cnt_31
+    ----------------------------------------
+    Total                      4.978ns (1.996ns logic, 2.982ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 63 / 63
+-------------------------------------------------------------------------
+Offset:              2.220ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       U37/set_time (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to U37/set_time
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           150   0.818   0.485  rst_IBUF (rst_IBUF)
+     INV:I->O             48   0.238   0.466  U37/rst_inv1_INV_0 (U30/my_hd44780_simple/reset_inv)
+     FDE:CE                    0.213          U30/my_hd44780_simple/cur_line_0
+    ----------------------------------------
+    Total                      2.220ns (1.269ns logic, 0.951ns route)
+                                       (57.2% logic, 42.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              3.330ns (Levels of Logic = 1)
+  Source:            U37/set_timer (FF)
+  Destination:       settingtimerout (PAD)
+  Source Clock:      clk rising
+
+  Data Path: U37/set_timer to settingtimerout
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             14   0.471   0.407  U37/set_timer (U37/set_timer)
+     OBUF:I->O                 2.452          settingtimerout_OBUF (settingtimerout)
+    ----------------------------------------
+    Total                      3.330ns (2.923ns logic, 0.407ns route)
+                                       (87.8% logic, 12.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.14 secs
+ 
+--> 
+
+Total memory usage is 313860 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   23 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

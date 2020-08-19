@@ -1,0 +1,62 @@
+set -tmpdir .
+set -xsthdpdir "C:\Users\taara\tp5final\tp5final\synthesis\xst"
+run
+-ifn top.prj
+-ifmt mixed
+-ofn top
+-ofmt NGC
+-p xc5vlx50tff1136-1
+-top top
+-opt_mode speed
+-opt_level 1
+-power no
+-iuc no
+-glob_opt allclocknets
+-rtlview yes
+-write_timing_constraints no
+-verilog2001 yes
+-keep_hierarchy no
+-netlist_hierarchy as_optimized
+-hierarchy_separator /
+-bus_delimiter <>
+-case maintain
+-cross_clock_analysis no
+-slice_utilization_ratio 100
+-bram_utilization_ratio 100
+-dsp_utilization_ratio 100
+-read_cores yes
+-generics {  }
+-define {  }
+-fsm_extract yes -fsm_encoding Auto
+-resource_sharing yes
+-fsm_style lut
+-ram_extract yes
+-ram_style auto
+-rom_extract yes
+-rom_style auto
+-auto_bram_packing no
+-mux_extract yes
+-mux_style auto
+-decoder_extract yes
+-priority_extract yes
+-shreg_extract yes
+-shift_extract yes
+-xor_collapse yes
+-use_dsp48 auto
+-async_to_sync no
+-iobuf yes
+-max_fanout 100000
+-bufg 32
+-register_duplication yes
+-equivalent_register_removal yes
+-register_balancing no
+-iob auto
+-lc off
+-reduce_control_sets off
+-slice_packing yes
+-optimize_primitives no
+-safe_implementation no
+-use_clock_enable auto
+-use_sync_set auto
+-use_sync_reset auto
+-slice_utilization_ratio_maxmargin 5
