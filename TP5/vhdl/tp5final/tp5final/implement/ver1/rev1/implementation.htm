@@ -1,0 +1,479 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<!----------------------------------------------------------------------------->
+<!--                          BEGIN HTML HEAD                                -->
+<!--                                                                         -->
+
+<HEAD>
+<TITLE>Implement&nbsp;Log</TITLE>
+<STYLE>
+.Err	{color:'#FF0000';cursor:hand;text-decoration:underline;}
+.Warn	{color:'#0000FF';cursor:hand;text-decoration:underline;}
+.Info	{color:'#000000';cursor:hand;text-decoration:underline;}
+.ErrH	{color:'#FF0000';cursor:hand;text-decoration:underline;}
+.WarnH	{color:'#0000FF';cursor:hand;text-decoration:underline;}
+.InfoH	{color:'#000000';cursor:hand;text-decoration:underline;}
+.Err1	{color:'#FF0000';}
+.Warn1	{color:'#0000FF';}
+.Info1	{color:'#000000';}
+</STYLE>
+</HEAD>
+<BODY BGCOLOR="white" TEXT="black" LINK="blue" VLINK="purple" BACKGROUND="C:\Logiciels\Active-HDL-9.3\Flows\Res\default.bmp">
+<FONT FACE="Courier New" SIZE=2>
+
+<!--                                                                         -->
+<!--                             END HEADER                                  -->
+<!----------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------->
+<!--                            BEGIN VBSCRIPT                               -->
+<!--                                                                         -->
+<SCRIPT LANGUAGE=JSCRIPT>
+	function RollOn() {
+		switch(window.event.srcElement.className) {
+			case 'Err':
+				window.event.srcElement.className = 'ErrH'; break;
+			case 'Warn':
+				window.event.srcElement.className = 'WarnH'; break;
+			case 'Info':
+				window.event.srcElement.className = 'InfoH'; break;
+		}
+	}
+	function RollOff() {
+		switch(window.event.srcElement.className) {
+			case 'ErrH':
+				window.event.srcElement.className = 'Err'; break;
+			case 'WarnH':
+				window.event.srcElement.className = 'Warn'; break;
+			case 'InfoH':
+				window.event.srcElement.className = 'Info'; break;
+		}
+	}
+	function OnError(sMsg,sUrl,sLine) {
+		return true;
+	}
+
+	document.onmouseover = RollOn;
+	document.onmouseout = RollOff;
+	window.onerror = OnError;
+</SCRIPT>
+
+<SCRIPT LANGUAGE=VBSCRIPT>
+
+Function IID_IDispatch
+	IID_IDispatch = "{00020400-0000-0000-C000-000000000046}"
+End Function
+
+Function CLSID_Executor
+	CLSID_Executor = "Aldec.ExePlugIn.Generic.7"
+End Function
+
+
+Sub OpenPlugIn (progid, template, document, element, string)
+
+	Dim executor, command
+
+	Set executor = window.external.aldec.connector.OpenPlugIn(CLSID_Executor, IID_IDispatch)
+
+	command = "?Activate[<"+progid+">][<"+template+">][<"+document+">][<"+element+">][<"+string+">]"
+
+	executor.ExecuteCommand command, ""
+
+End Sub
+
+
+</SCRIPT>
+<!--                                                                         -->
+<!--                             END VBSCRIPT                                -->
+<!----------------------------------------------------------------------------->
+
+<H2>Implement&nbsp;Log</H2>
+Created on 22:07:58 04/08/2016
+<HR NOSHADE COLOR="#008080">
+<SPAN class=Info1>InputFile&nbsp;=&nbsp;C:/Users/taara/tp5final/tp5final/implement/xie4.ini<BR></SPAN>
+<SPAN class=Info1>Executing&nbsp;&quot;C:\Logiciels\Xilinx\14.4\ISE_DS\ISE\bin\nt64\ngdbuild.exe&quot;&nbsp;-p&nbsp;5VLX50TFF1136-1&nbsp;&nbsp;&nbsp;-sd&nbsp;&quot;C:\Users\taara\tp5final\tp5final\synthesis&quot;&nbsp;-sd&nbsp;&quot;C:\Users\taara\tp5final\tp5final\compile&quot;&nbsp;-sd&nbsp;&quot;C:\Users\taara\tp5final\tp5final\src&quot;&nbsp;-uc&nbsp;&quot;top.ucf&quot;&nbsp;&quot;top.ngc&quot;&nbsp;&quot;top.ngd&quot;<BR></SPAN>
+<SPAN class=Info1>Release&nbsp;14.4&nbsp;-&nbsp;ngdbuild&nbsp;P.49d&nbsp;(nt64)<BR></SPAN>
+<SPAN class=Info1>Copyright&nbsp;(c)&nbsp;1995-2012&nbsp;Xilinx,&nbsp;Inc.&nbsp;&nbsp;All&nbsp;rights&nbsp;reserved.<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Command&nbsp;Line:<BR></SPAN>
+<SPAN class=Info1>C:\Logiciels\Xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe&nbsp;-p<BR></SPAN>
+<SPAN class=Info1>5VLX50TFF1136-1&nbsp;-sd&nbsp;C:\Users\taara\tp5final\tp5final\synthesis&nbsp;-sd<BR></SPAN>
+<SPAN class=Info1>C:\Users\taara\tp5final\tp5final\compile&nbsp;-sd<BR></SPAN>
+<SPAN class=Info1>C:\Users\taara\tp5final\tp5final\src&nbsp;-uc&nbsp;top.ucf&nbsp;top.ngc&nbsp;top.ngd<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Reading&nbsp;NGO&nbsp;file&nbsp;&quot;C:/Users/taara/tp5final/tp5final/implement/ver1/rev1/top.ngc&quot;<BR></SPAN>
+<SPAN class=Info1>...<BR></SPAN>
+<SPAN class=Info1>Gathering&nbsp;constraint&nbsp;information&nbsp;from&nbsp;source&nbsp;properties...<BR></SPAN>
+<SPAN class=Info1>Done.<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Annotating&nbsp;constraints&nbsp;to&nbsp;design&nbsp;from&nbsp;ucf&nbsp;file&nbsp;&quot;top.ucf&quot;&nbsp;...<BR></SPAN>
+<SPAN class=Info1>Resolving&nbsp;constraint&nbsp;associations...<BR></SPAN>
+<SPAN class=Info1>Checking&nbsp;Constraint&nbsp;Associations...<BR></SPAN>
+<SPAN class=Info1>Done...<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Checking&nbsp;expanded&nbsp;design&nbsp;...<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Partition&nbsp;Implementation&nbsp;Status<BR></SPAN>
+<SPAN class=Info1>-------------------------------<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;No&nbsp;Partitions&nbsp;were&nbsp;found&nbsp;in&nbsp;this&nbsp;design.<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>-------------------------------<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>NGDBUILD&nbsp;Design&nbsp;Results&nbsp;Summary:<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;Number&nbsp;of&nbsp;errors:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;Number&nbsp;of&nbsp;warnings:&nbsp;&nbsp;&nbsp;0<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Writing&nbsp;NGD&nbsp;file&nbsp;&quot;top.ngd&quot;&nbsp;...<BR></SPAN>
+<SPAN class=Info1>Total&nbsp;REAL&nbsp;time&nbsp;to&nbsp;NGDBUILD&nbsp;completion:&nbsp;&nbsp;4&nbsp;sec<BR></SPAN>
+<SPAN class=Info1>Total&nbsp;CPU&nbsp;time&nbsp;to&nbsp;NGDBUILD&nbsp;completion:&nbsp;&nbsp;&nbsp;4&nbsp;sec<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Writing&nbsp;NGDBUILD&nbsp;log&nbsp;file&nbsp;&quot;top.bld&quot;...<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>NGDBUILD&nbsp;done.<BR></SPAN>
+<SPAN class=Info1>Executing&nbsp;&quot;C:\Logiciels\Xilinx\14.4\ISE_DS\ISE\bin\nt64\map.exe&quot;&nbsp;-p&nbsp;5VLX50TFF1136-1&nbsp;-o&nbsp;&quot;map.ncd&quot;&nbsp;&nbsp;-pr&nbsp;off&nbsp;&nbsp;-ol&nbsp;high&nbsp;&nbsp;-cm&nbsp;area&nbsp;&nbsp;-ir&nbsp;off&nbsp;&nbsp;-t&nbsp;1&nbsp;&nbsp;-register_duplication&nbsp;off&nbsp;&nbsp;-global_opt&nbsp;off&nbsp;&nbsp;-logic_opt&nbsp;off&nbsp;&nbsp;-lc&nbsp;off&nbsp;&nbsp;-mt&nbsp;off&nbsp;&quot;top.ngd&quot;&nbsp;&quot;top.pcf&quot;<BR></SPAN>
+<SPAN class=Info1>Release&nbsp;14.4&nbsp;-&nbsp;Map&nbsp;P.49d&nbsp;(nt64)<BR></SPAN>
+<SPAN class=Info1>Copyright&nbsp;(c)&nbsp;1995-2012&nbsp;Xilinx,&nbsp;Inc.&nbsp;&nbsp;All&nbsp;rights&nbsp;reserved.<BR></SPAN>
+<SPAN class=Info1>Using&nbsp;target&nbsp;part&nbsp;&quot;5vlx50tff1136-1&quot;.<BR></SPAN>
+<SPAN class=Info1>vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv<BR></SPAN>
+<SPAN class=Info1>INFO:Security:50&nbsp;-&nbsp;The&nbsp;XILINXD_LICENSE_FILE&nbsp;environment&nbsp;variable&nbsp;is&nbsp;set&nbsp;to<BR></SPAN>
+<SPAN class=Info1>'2100@victoria.lerb.polymtl.ca'.<BR></SPAN>
+<SPAN class=Info1>INFO:Security:52&nbsp;-&nbsp;The&nbsp;LM_LICENSE_FILE&nbsp;environment&nbsp;variable&nbsp;is&nbsp;set&nbsp;to<BR></SPAN>
+<SPAN class=Info1>'1717@peel.grm.polymtl.ca;1801@peel.grm.polymtl.ca;1717@victoria.lerb.polymtl.ca<BR></SPAN>
+<SPAN class=Info1>;1400@srvgrm07.grm.polymtl.ca;27000@victoria.lerb.polymtl.ca'.<BR></SPAN>
+<SPAN class=Info1>INFO:Security:54&nbsp;-&nbsp;'xc5vlx50t'&nbsp;is&nbsp;a&nbsp;WebPack&nbsp;part.<BR></SPAN>
+<SPAN class=Warn1>Security:43&nbsp;-&nbsp;No&nbsp;license&nbsp;file&nbsp;was&nbsp;found&nbsp;in&nbsp;the&nbsp;standard&nbsp;Xilinx&nbsp;license<BR></SPAN>
+<SPAN class=Warn1>directory.<BR></SPAN>
+<SPAN class=Warn1>Security:44&nbsp;-&nbsp;Since&nbsp;no&nbsp;license&nbsp;file&nbsp;was&nbsp;found,<BR></SPAN>
+<SPAN class=Warn1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;please&nbsp;run&nbsp;the&nbsp;Xilinx&nbsp;License&nbsp;Configuration&nbsp;Manager<BR></SPAN>
+<SPAN class=Warn1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(xlcm&nbsp;or&nbsp;&quot;Manage&nbsp;Xilinx&nbsp;Licenses&quot;)<BR></SPAN>
+<SPAN class=Warn1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;assist&nbsp;in&nbsp;obtaining&nbsp;a&nbsp;license.<BR></SPAN>
+<SPAN class=Warn1>Security:42&nbsp;-&nbsp;Your&nbsp;software&nbsp;subscription&nbsp;period&nbsp;has&nbsp;lapsed.&nbsp;Your&nbsp;current<BR></SPAN>
+<SPAN class=Info1>Xilinx&nbsp;software&nbsp;updates&nbsp;or&nbsp;new&nbsp;releases.<BR></SPAN>
+<SPAN class=Info1>----------------------------------------------------------------------<BR></SPAN>
+<SPAN class=Info1>Mapping&nbsp;design&nbsp;into&nbsp;LUTs...<BR></SPAN>
+<SPAN class=Info1>Writing&nbsp;file&nbsp;map.ngm...<BR></SPAN>
+<SPAN class=Info1>Running&nbsp;directed&nbsp;packing...<BR></SPAN>
+<SPAN class=Info1>Running&nbsp;delay-based&nbsp;LUT&nbsp;packing...<BR></SPAN>
+<SPAN class=Info1>Updating&nbsp;timing&nbsp;models...<BR></SPAN>
+<SPAN class=Info1>INFO:Map:215&nbsp;-&nbsp;The&nbsp;Interim&nbsp;Design&nbsp;Summary&nbsp;has&nbsp;been&nbsp;generated&nbsp;in&nbsp;the&nbsp;MAP&nbsp;Report<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;(.mrp).<BR></SPAN>
+<SPAN class=Info1>Running&nbsp;timing-driven&nbsp;placement...<BR></SPAN>
+<SPAN class=Info1>Total&nbsp;REAL&nbsp;time&nbsp;at&nbsp;the&nbsp;beginning&nbsp;of&nbsp;Placer:&nbsp;9&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1>Total&nbsp;CPU&nbsp;&nbsp;time&nbsp;at&nbsp;the&nbsp;beginning&nbsp;of&nbsp;Placer:&nbsp;8&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;1.1&nbsp;&nbsp;Initial&nbsp;Placement&nbsp;Analysis<BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;1.1&nbsp;&nbsp;Initial&nbsp;Placement&nbsp;Analysis&nbsp;(Checksum:fc8db41a)&nbsp;REAL&nbsp;time:&nbsp;9&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;2.7&nbsp;&nbsp;Design&nbsp;Feasibility&nbsp;Check<BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;2.7&nbsp;&nbsp;Design&nbsp;Feasibility&nbsp;Check&nbsp;(Checksum:fc8db41a)&nbsp;REAL&nbsp;time:&nbsp;9&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;3.31&nbsp;&nbsp;Local&nbsp;Placement&nbsp;Optimization<BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;3.31&nbsp;&nbsp;Local&nbsp;Placement&nbsp;Optimization&nbsp;(Checksum:fc8db41a)&nbsp;REAL&nbsp;time:&nbsp;9&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;4.37&nbsp;&nbsp;Local&nbsp;Placement&nbsp;Optimization<BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;4.37&nbsp;&nbsp;Local&nbsp;Placement&nbsp;Optimization&nbsp;(Checksum:fc8db41a)&nbsp;REAL&nbsp;time:&nbsp;9&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;5.33&nbsp;&nbsp;Local&nbsp;Placement&nbsp;Optimization<BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;5.33&nbsp;&nbsp;Local&nbsp;Placement&nbsp;Optimization&nbsp;(Checksum:fc8db41a)&nbsp;REAL&nbsp;time:&nbsp;10&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;6.32&nbsp;&nbsp;Local&nbsp;Placement&nbsp;Optimization<BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;6.32&nbsp;&nbsp;Local&nbsp;Placement&nbsp;Optimization&nbsp;(Checksum:fc8db41a)&nbsp;REAL&nbsp;time:&nbsp;10&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;7.2&nbsp;&nbsp;Initial&nbsp;Clock&nbsp;and&nbsp;IO&nbsp;Placement<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;7.2&nbsp;&nbsp;Initial&nbsp;Clock&nbsp;and&nbsp;IO&nbsp;Placement&nbsp;(Checksum:32ad69ed)&nbsp;REAL&nbsp;time:&nbsp;11&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;8.36&nbsp;&nbsp;Local&nbsp;Placement&nbsp;Optimization<BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;8.36&nbsp;&nbsp;Local&nbsp;Placement&nbsp;Optimization&nbsp;(Checksum:32ad69ed)&nbsp;REAL&nbsp;time:&nbsp;11&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;9.30&nbsp;&nbsp;Global&nbsp;Clock&nbsp;Region&nbsp;Assignment<BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;9.30&nbsp;&nbsp;Global&nbsp;Clock&nbsp;Region&nbsp;Assignment&nbsp;(Checksum:32ad69ed)&nbsp;REAL&nbsp;time:&nbsp;11&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;10.3&nbsp;&nbsp;Local&nbsp;Placement&nbsp;Optimization<BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;10.3&nbsp;&nbsp;Local&nbsp;Placement&nbsp;Optimization&nbsp;(Checksum:32ad69ed)&nbsp;REAL&nbsp;time:&nbsp;11&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;11.5&nbsp;&nbsp;Local&nbsp;Placement&nbsp;Optimization<BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;11.5&nbsp;&nbsp;Local&nbsp;Placement&nbsp;Optimization&nbsp;(Checksum:32ad69ed)&nbsp;REAL&nbsp;time:&nbsp;11&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;12.8&nbsp;&nbsp;Global&nbsp;Placement<BR></SPAN>
+<SPAN class=Info1>.............<BR></SPAN>
+<SPAN class=Info1>.<BR></SPAN>
+<SPAN class=Info1>.<BR></SPAN>
+<SPAN class=Info1>.<BR></SPAN>
+<SPAN class=Info1>.<BR></SPAN>
+<SPAN class=Info1>.<BR></SPAN>
+<SPAN class=Info1>.<BR></SPAN>
+<SPAN class=Info1>...........<BR></SPAN>
+<SPAN class=Info1>..<BR></SPAN>
+<SPAN class=Info1>.<BR></SPAN>
+<SPAN class=Info1>..<BR></SPAN>
+<SPAN class=Info1>.<BR></SPAN>
+<SPAN class=Info1>.<BR></SPAN>
+<SPAN class=Info1>.<BR></SPAN>
+<SPAN class=Info1>..<BR></SPAN>
+<SPAN class=Info1>.<BR></SPAN>
+<SPAN class=Info1>..<BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;12.8&nbsp;&nbsp;Global&nbsp;Placement&nbsp;(Checksum:d6b00309)&nbsp;REAL&nbsp;time:&nbsp;11&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;13.29&nbsp;&nbsp;Local&nbsp;Placement&nbsp;Optimization<BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;13.29&nbsp;&nbsp;Local&nbsp;Placement&nbsp;Optimization&nbsp;(Checksum:d6b00309)&nbsp;REAL&nbsp;time:&nbsp;11&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;14.5&nbsp;&nbsp;Local&nbsp;Placement&nbsp;Optimization<BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;14.5&nbsp;&nbsp;Local&nbsp;Placement&nbsp;Optimization&nbsp;(Checksum:d6b00309)&nbsp;REAL&nbsp;time:&nbsp;11&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;15.18&nbsp;&nbsp;Placement&nbsp;Optimization<BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;15.18&nbsp;&nbsp;Placement&nbsp;Optimization&nbsp;(Checksum:78b448b9)&nbsp;REAL&nbsp;time:&nbsp;15&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;16.5&nbsp;&nbsp;Local&nbsp;Placement&nbsp;Optimization<BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;16.5&nbsp;&nbsp;Local&nbsp;Placement&nbsp;Optimization&nbsp;(Checksum:78b448b9)&nbsp;REAL&nbsp;time:&nbsp;15&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;17.34&nbsp;&nbsp;Placement&nbsp;Validation<BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;17.34&nbsp;&nbsp;Placement&nbsp;Validation&nbsp;(Checksum:78b448b9)&nbsp;REAL&nbsp;time:&nbsp;15&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Total&nbsp;REAL&nbsp;time&nbsp;to&nbsp;Placer&nbsp;completion:&nbsp;15&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1>Total&nbsp;CPU&nbsp;&nbsp;time&nbsp;to&nbsp;Placer&nbsp;completion:&nbsp;15&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1>Running&nbsp;post-placement&nbsp;packing...<BR></SPAN>
+<SPAN class=Info1>Writing&nbsp;output&nbsp;files...<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Design&nbsp;Summary:<BR></SPAN>
+<SPAN class=Info1>Number&nbsp;of&nbsp;errors:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0<BR></SPAN>
+<SPAN class=Info1>Number&nbsp;of&nbsp;warnings:&nbsp;&nbsp;&nbsp;&nbsp;0<BR></SPAN>
+<SPAN class=Info1>Slice&nbsp;Logic&nbsp;Utilization:<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;Number&nbsp;of&nbsp;Slice&nbsp;Registers:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;324&nbsp;out&nbsp;of&nbsp;&nbsp;28,800&nbsp;&nbsp;&nbsp;&nbsp;1%<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;&nbsp;Number&nbsp;used&nbsp;as&nbsp;Flip&nbsp;Flops:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;324<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;Number&nbsp;of&nbsp;Slice&nbsp;LUTs:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;712&nbsp;out&nbsp;of&nbsp;&nbsp;28,800&nbsp;&nbsp;&nbsp;&nbsp;2%<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;&nbsp;Number&nbsp;used&nbsp;as&nbsp;logic:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;703&nbsp;out&nbsp;of&nbsp;&nbsp;28,800&nbsp;&nbsp;&nbsp;&nbsp;2%<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number&nbsp;using&nbsp;O6&nbsp;output&nbsp;only:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;469<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number&nbsp;using&nbsp;O5&nbsp;output&nbsp;only:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;210<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number&nbsp;using&nbsp;O5&nbsp;and&nbsp;O6:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;&nbsp;Number&nbsp;used&nbsp;as&nbsp;exclusive&nbsp;route-thru:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;Number&nbsp;of&nbsp;route-thrus:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;219<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;&nbsp;Number&nbsp;using&nbsp;O6&nbsp;output&nbsp;only:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;219<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Slice&nbsp;Logic&nbsp;Distribution:<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;Number&nbsp;of&nbsp;occupied&nbsp;Slices:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;249&nbsp;out&nbsp;of&nbsp;&nbsp;&nbsp;7,200&nbsp;&nbsp;&nbsp;&nbsp;3%<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;Number&nbsp;of&nbsp;LUT&nbsp;Flip&nbsp;Flop&nbsp;pairs&nbsp;used:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;737<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;&nbsp;Number&nbsp;with&nbsp;an&nbsp;unused&nbsp;Flip&nbsp;Flop:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;413&nbsp;out&nbsp;of&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;737&nbsp;&nbsp;&nbsp;56%<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;&nbsp;Number&nbsp;with&nbsp;an&nbsp;unused&nbsp;LUT:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25&nbsp;out&nbsp;of&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;737&nbsp;&nbsp;&nbsp;&nbsp;3%<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;&nbsp;Number&nbsp;of&nbsp;fully&nbsp;used&nbsp;LUT-FF&nbsp;pairs:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;299&nbsp;out&nbsp;of&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;737&nbsp;&nbsp;&nbsp;40%<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;&nbsp;Number&nbsp;of&nbsp;unique&nbsp;control&nbsp;sets:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;&nbsp;Number&nbsp;of&nbsp;slice&nbsp;register&nbsp;sites&nbsp;lost<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;control&nbsp;set&nbsp;restrictions:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;72&nbsp;out&nbsp;of&nbsp;&nbsp;28,800&nbsp;&nbsp;&nbsp;&nbsp;1%<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;A&nbsp;LUT&nbsp;Flip&nbsp;Flop&nbsp;pair&nbsp;for&nbsp;this&nbsp;architecture&nbsp;represents&nbsp;one&nbsp;LUT&nbsp;paired&nbsp;with<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;one&nbsp;Flip&nbsp;Flop&nbsp;within&nbsp;a&nbsp;slice.&nbsp;&nbsp;A&nbsp;control&nbsp;set&nbsp;is&nbsp;a&nbsp;unique&nbsp;combination&nbsp;of<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;clock,&nbsp;reset,&nbsp;set,&nbsp;and&nbsp;enable&nbsp;signals&nbsp;for&nbsp;a&nbsp;registered&nbsp;element.<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;The&nbsp;Slice&nbsp;Logic&nbsp;Distribution&nbsp;report&nbsp;is&nbsp;not&nbsp;meaningful&nbsp;if&nbsp;the&nbsp;design&nbsp;is<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;over-mapped&nbsp;for&nbsp;a&nbsp;non-slice&nbsp;resource&nbsp;or&nbsp;if&nbsp;Placement&nbsp;fails.<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;OVERMAPPING&nbsp;of&nbsp;BRAM&nbsp;resources&nbsp;should&nbsp;be&nbsp;ignored&nbsp;if&nbsp;the&nbsp;design&nbsp;is<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;over-mapped&nbsp;for&nbsp;a&nbsp;non-BRAM&nbsp;resource&nbsp;or&nbsp;if&nbsp;placement&nbsp;fails.<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>IO&nbsp;Utilization:<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;Number&nbsp;of&nbsp;bonded&nbsp;IOBs:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25&nbsp;out&nbsp;of&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;480&nbsp;&nbsp;&nbsp;&nbsp;5%<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;&nbsp;Number&nbsp;of&nbsp;LOCed&nbsp;IOBs:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25&nbsp;out&nbsp;of&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25&nbsp;&nbsp;100%<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Specific&nbsp;Feature&nbsp;Utilization:<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;Number&nbsp;of&nbsp;BUFG/BUFGCTRLs:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;out&nbsp;of&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32&nbsp;&nbsp;&nbsp;&nbsp;3%<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;&nbsp;Number&nbsp;used&nbsp;as&nbsp;BUFGs:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Average&nbsp;Fanout&nbsp;of&nbsp;Non-Clock&nbsp;Nets:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.17<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Peak&nbsp;Memory&nbsp;Usage:&nbsp;&nbsp;556&nbsp;MB<BR></SPAN>
+<SPAN class=Info1>Total&nbsp;REAL&nbsp;time&nbsp;to&nbsp;MAP&nbsp;completion:&nbsp;&nbsp;16&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1>Total&nbsp;CPU&nbsp;time&nbsp;to&nbsp;MAP&nbsp;completion:&nbsp;&nbsp;&nbsp;15&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Mapping&nbsp;completed.<BR></SPAN>
+<SPAN class=Info1>See&nbsp;MAP&nbsp;report&nbsp;file&nbsp;&quot;map.mrp&quot;&nbsp;for&nbsp;details.<BR></SPAN>
+<SPAN class=Info1>Executing&nbsp;&quot;C:\Logiciels\Xilinx\14.4\ISE_DS\ISE\bin\nt64\par.exe&quot;&nbsp;-w&nbsp;&nbsp;-ol&nbsp;std&nbsp;&nbsp;-p&nbsp;&nbsp;-mt&nbsp;off&nbsp;map.ncd&nbsp;&quot;top.ncd&quot;&nbsp;&quot;top.pcf&quot;<BR></SPAN>
+<SPAN class=Info1>Release&nbsp;14.4&nbsp;-&nbsp;par&nbsp;P.49d&nbsp;(nt64)<BR></SPAN>
+<SPAN class=Info1>Copyright&nbsp;(c)&nbsp;1995-2012&nbsp;Xilinx,&nbsp;Inc.&nbsp;&nbsp;All&nbsp;rights&nbsp;reserved.<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Constraints&nbsp;file:&nbsp;top.pcf.<BR></SPAN>
+<SPAN class=Info1>Loading&nbsp;device&nbsp;for&nbsp;application&nbsp;Rf_Device&nbsp;from&nbsp;file&nbsp;'5vlx50t.nph'&nbsp;in&nbsp;environment&nbsp;C:\Logiciels\Xilinx\14.4\ISE_DS\ISE\.<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;&quot;top&quot;&nbsp;is&nbsp;an&nbsp;NCD,&nbsp;version&nbsp;3.2,&nbsp;device&nbsp;xc5vlx50t,&nbsp;package&nbsp;ff1136,&nbsp;speed&nbsp;-1<BR></SPAN>
+<SPAN class=Info1>vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv<BR></SPAN>
+<SPAN class=Info1>INFO:Security:50&nbsp;-&nbsp;The&nbsp;XILINXD_LICENSE_FILE&nbsp;environment&nbsp;variable&nbsp;is&nbsp;set&nbsp;to&nbsp;'2100@victoria.lerb.polymtl.ca'.<BR></SPAN>
+<SPAN class=Info1>INFO:Security:52&nbsp;-&nbsp;The&nbsp;LM_LICENSE_FILE&nbsp;environment&nbsp;variable&nbsp;is&nbsp;set&nbsp;to<BR></SPAN>
+<SPAN class=Info1>'1717@peel.grm.polymtl.ca;1801@peel.grm.polymtl.ca;1717@victoria.lerb.polymtl.ca;1400@srvgrm07.grm.polymtl.ca;27000@vict<BR></SPAN>
+<SPAN class=Info1>oria.lerb.polymtl.ca'.<BR></SPAN>
+<SPAN class=Info1>INFO:Security:54&nbsp;-&nbsp;'xc5vlx50t'&nbsp;is&nbsp;a&nbsp;WebPack&nbsp;part.<BR></SPAN>
+<SPAN class=Warn1>Security:43&nbsp;-&nbsp;No&nbsp;license&nbsp;file&nbsp;was&nbsp;found&nbsp;in&nbsp;the&nbsp;standard&nbsp;Xilinx&nbsp;license&nbsp;directory.<BR></SPAN>
+<SPAN class=Warn1>Security:44&nbsp;-&nbsp;Since&nbsp;no&nbsp;license&nbsp;file&nbsp;was&nbsp;found,<BR></SPAN>
+<SPAN class=Warn1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;please&nbsp;run&nbsp;the&nbsp;Xilinx&nbsp;License&nbsp;Configuration&nbsp;Manager<BR></SPAN>
+<SPAN class=Warn1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(xlcm&nbsp;or&nbsp;&quot;Manage&nbsp;Xilinx&nbsp;Licenses&quot;)<BR></SPAN>
+<SPAN class=Warn1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;assist&nbsp;in&nbsp;obtaining&nbsp;a&nbsp;license.<BR></SPAN>
+<SPAN class=Warn1>Security:42&nbsp;-&nbsp;Your&nbsp;software&nbsp;subscription&nbsp;period&nbsp;has&nbsp;lapsed.&nbsp;Your&nbsp;current&nbsp;version&nbsp;of&nbsp;Xilinx&nbsp;tools&nbsp;will&nbsp;continue<BR></SPAN>
+<SPAN class=Warn1>to&nbsp;function,&nbsp;but&nbsp;you&nbsp;no&nbsp;longer&nbsp;qualify&nbsp;for&nbsp;Xilinx&nbsp;software&nbsp;updates&nbsp;or&nbsp;new&nbsp;releases.<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>----------------------------------------------------------------------<BR></SPAN>
+<SPAN class=Warn1>Par:381&nbsp;-&nbsp;One&nbsp;or&nbsp;more&nbsp;of&nbsp;the&nbsp;following&nbsp;switches&nbsp;-p&nbsp;and&nbsp;-r&nbsp;is&nbsp;not&nbsp;supported&nbsp;for&nbsp;this&nbsp;architecture.&nbsp;&nbsp;PAR&nbsp;will<BR></SPAN>
+<SPAN class=Warn1>&nbsp;&nbsp;&nbsp;ignore&nbsp;the&nbsp;switch&nbsp;and&nbsp;processing&nbsp;will&nbsp;continue<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Initializing&nbsp;temperature&nbsp;to&nbsp;85.000&nbsp;Celsius.&nbsp;(default&nbsp;-&nbsp;Range:&nbsp;0.000&nbsp;to&nbsp;85.000&nbsp;Celsius)<BR></SPAN>
+<SPAN class=Info1>Initializing&nbsp;voltage&nbsp;to&nbsp;0.950&nbsp;Volts.&nbsp;(default&nbsp;-&nbsp;Range:&nbsp;0.950&nbsp;to&nbsp;1.050&nbsp;Volts)<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Device&nbsp;speed&nbsp;data&nbsp;version:&nbsp;&nbsp;&quot;PRODUCTION&nbsp;1.73&nbsp;2012-12-04&quot;.<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Device&nbsp;Utilization&nbsp;Summary:<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;Number&nbsp;of&nbsp;BUFGs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;out&nbsp;of&nbsp;32&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3%<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;Number&nbsp;of&nbsp;External&nbsp;IOBs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25&nbsp;out&nbsp;of&nbsp;480&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5%<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number&nbsp;of&nbsp;LOCed&nbsp;IOBs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25&nbsp;out&nbsp;of&nbsp;25&nbsp;&nbsp;&nbsp;&nbsp;100%<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;Number&nbsp;of&nbsp;Slices&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;249&nbsp;out&nbsp;of&nbsp;7200&nbsp;&nbsp;&nbsp;&nbsp;3%<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;Number&nbsp;of&nbsp;Slice&nbsp;Registers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;324&nbsp;out&nbsp;of&nbsp;28800&nbsp;&nbsp;&nbsp;1%<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number&nbsp;used&nbsp;as&nbsp;Flip&nbsp;Flops&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;324<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number&nbsp;used&nbsp;as&nbsp;Latches&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number&nbsp;used&nbsp;as&nbsp;LatchThrus&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;Number&nbsp;of&nbsp;Slice&nbsp;LUTS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;712&nbsp;out&nbsp;of&nbsp;28800&nbsp;&nbsp;&nbsp;2%<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;Number&nbsp;of&nbsp;Slice&nbsp;LUT-Flip&nbsp;Flop&nbsp;pairs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;737&nbsp;out&nbsp;of&nbsp;28800&nbsp;&nbsp;&nbsp;2%<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Overall&nbsp;effort&nbsp;level&nbsp;(-ol):&nbsp;&nbsp;&nbsp;Standard&nbsp;<BR></SPAN>
+<SPAN class=Info1>Router&nbsp;effort&nbsp;level&nbsp;(-rl):&nbsp;&nbsp;&nbsp;&nbsp;Standard&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Starting&nbsp;initial&nbsp;Timing&nbsp;Analysis.&nbsp;&nbsp;REAL&nbsp;time:&nbsp;6&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1>Finished&nbsp;initial&nbsp;Timing&nbsp;Analysis.&nbsp;&nbsp;REAL&nbsp;time:&nbsp;6&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Starting&nbsp;Router<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;&nbsp;1&nbsp;&nbsp;:&nbsp;2683&nbsp;unrouted;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REAL&nbsp;time:&nbsp;7&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;&nbsp;2&nbsp;&nbsp;:&nbsp;2323&nbsp;unrouted;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REAL&nbsp;time:&nbsp;7&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;&nbsp;3&nbsp;&nbsp;:&nbsp;518&nbsp;unrouted;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REAL&nbsp;time:&nbsp;8&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;&nbsp;4&nbsp;&nbsp;:&nbsp;518&nbsp;unrouted;&nbsp;(Setup:0,&nbsp;Hold:0,&nbsp;Component&nbsp;Switching&nbsp;Limit:0)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REAL&nbsp;time:&nbsp;10&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;&nbsp;5&nbsp;&nbsp;:&nbsp;0&nbsp;unrouted;&nbsp;(Setup:0,&nbsp;Hold:0,&nbsp;Component&nbsp;Switching&nbsp;Limit:0)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REAL&nbsp;time:&nbsp;10&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;&nbsp;6&nbsp;&nbsp;:&nbsp;0&nbsp;unrouted;&nbsp;(Setup:0,&nbsp;Hold:0,&nbsp;Component&nbsp;Switching&nbsp;Limit:0)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REAL&nbsp;time:&nbsp;10&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;&nbsp;7&nbsp;&nbsp;:&nbsp;0&nbsp;unrouted;&nbsp;(Setup:0,&nbsp;Hold:0,&nbsp;Component&nbsp;Switching&nbsp;Limit:0)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REAL&nbsp;time:&nbsp;10&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;&nbsp;8&nbsp;&nbsp;:&nbsp;0&nbsp;unrouted;&nbsp;(Setup:0,&nbsp;Hold:0,&nbsp;Component&nbsp;Switching&nbsp;Limit:0)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REAL&nbsp;time:&nbsp;10&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;&nbsp;9&nbsp;&nbsp;:&nbsp;0&nbsp;unrouted;&nbsp;(Setup:0,&nbsp;Hold:0,&nbsp;Component&nbsp;Switching&nbsp;Limit:0)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REAL&nbsp;time:&nbsp;10&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Phase&nbsp;10&nbsp;&nbsp;:&nbsp;0&nbsp;unrouted;&nbsp;(Setup:0,&nbsp;Hold:0,&nbsp;Component&nbsp;Switching&nbsp;Limit:0)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REAL&nbsp;time:&nbsp;10&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1>Total&nbsp;REAL&nbsp;time&nbsp;to&nbsp;Router&nbsp;completion:&nbsp;10&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1>Total&nbsp;CPU&nbsp;time&nbsp;to&nbsp;Router&nbsp;completion:&nbsp;10&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Partition&nbsp;Implementation&nbsp;Status<BR></SPAN>
+<SPAN class=Info1>-------------------------------<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;No&nbsp;Partitions&nbsp;were&nbsp;found&nbsp;in&nbsp;this&nbsp;design.<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>-------------------------------<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Generating&nbsp;&quot;PAR&quot;&nbsp;statistics.<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>**************************<BR></SPAN>
+<SPAN class=Info1>Generating&nbsp;Clock&nbsp;Report<BR></SPAN>
+<SPAN class=Info1>**************************<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>+---------------------+--------------+------+------+------------+-------------+<BR></SPAN>
+<SPAN class=Info1>|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clock&nbsp;Net&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Resource&nbsp;&nbsp;&nbsp;|Locked|Fanout|Net&nbsp;Skew(ns)|Max&nbsp;Delay(ns)|<BR></SPAN>
+<SPAN class=Info1>+---------------------+--------------+------+------+------------+-------------+<BR></SPAN>
+<SPAN class=Info1>|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clk_BUFGP&nbsp;|&nbsp;BUFGCTRL_X0Y0|&nbsp;No&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;125&nbsp;|&nbsp;&nbsp;0.231&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;1.729&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<BR></SPAN>
+<SPAN class=Info1>+---------------------+--------------+------+------+------------+-------------+<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>*&nbsp;Net&nbsp;Skew&nbsp;is&nbsp;the&nbsp;difference&nbsp;between&nbsp;the&nbsp;minimum&nbsp;and&nbsp;maximum&nbsp;routing<BR></SPAN>
+<SPAN class=Info1>only&nbsp;delays&nbsp;for&nbsp;the&nbsp;net.&nbsp;Note&nbsp;this&nbsp;is&nbsp;different&nbsp;from&nbsp;Clock&nbsp;Skew&nbsp;which<BR></SPAN>
+<SPAN class=Info1>is&nbsp;reported&nbsp;in&nbsp;TRCE&nbsp;timing&nbsp;report.&nbsp;Clock&nbsp;Skew&nbsp;is&nbsp;the&nbsp;difference&nbsp;between<BR></SPAN>
+<SPAN class=Info1>the&nbsp;minimum&nbsp;and&nbsp;maximum&nbsp;path&nbsp;delays&nbsp;which&nbsp;includes&nbsp;logic&nbsp;delays.<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>*&nbsp;The&nbsp;fanout&nbsp;is&nbsp;the&nbsp;number&nbsp;of&nbsp;component&nbsp;pins&nbsp;not&nbsp;the&nbsp;individual&nbsp;BEL&nbsp;loads,<BR></SPAN>
+<SPAN class=Info1>for&nbsp;example&nbsp;SLICE&nbsp;loads&nbsp;not&nbsp;FF&nbsp;loads.<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Timing&nbsp;Score:&nbsp;0&nbsp;(Setup:&nbsp;0,&nbsp;Hold:&nbsp;0,&nbsp;Component&nbsp;Switching&nbsp;Limit:&nbsp;0)<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Asterisk&nbsp;(*)&nbsp;preceding&nbsp;a&nbsp;constraint&nbsp;indicates&nbsp;it&nbsp;was&nbsp;not&nbsp;met.<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;This&nbsp;may&nbsp;be&nbsp;due&nbsp;to&nbsp;a&nbsp;setup&nbsp;or&nbsp;hold&nbsp;violation.<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>----------------------------------------------------------------------------------------------------------<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;Constraint&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Check&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;Worst&nbsp;Case&nbsp;|&nbsp;&nbsp;Best&nbsp;Case&nbsp;|&nbsp;Timing&nbsp;|&nbsp;&nbsp;&nbsp;Timing&nbsp;&nbsp;&nbsp;<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Slack&nbsp;&nbsp;&nbsp;|&nbsp;Achievable&nbsp;|&nbsp;Errors&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Score&nbsp;&nbsp;&nbsp;<BR></SPAN>
+<SPAN class=Info1>----------------------------------------------------------------------------------------------------------<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;ts_clk&nbsp;=&nbsp;PERIOD&nbsp;TIMEGRP&nbsp;&quot;clk&quot;&nbsp;100&nbsp;MHz&nbsp;HIG&nbsp;|&nbsp;SETUP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.169ns|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.831ns|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;H&nbsp;50%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;HOLD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.459ns|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0<BR></SPAN>
+<SPAN class=Info1>----------------------------------------------------------------------------------------------------------<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>All&nbsp;constraints&nbsp;were&nbsp;met.<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Generating&nbsp;Pad&nbsp;Report.<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>All&nbsp;signals&nbsp;are&nbsp;completely&nbsp;routed.<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Total&nbsp;REAL&nbsp;time&nbsp;to&nbsp;PAR&nbsp;completion:&nbsp;14&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1>Total&nbsp;CPU&nbsp;time&nbsp;to&nbsp;PAR&nbsp;completion:&nbsp;13&nbsp;secs&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Peak&nbsp;Memory&nbsp;Usage:&nbsp;&nbsp;479&nbsp;MB<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Placer:&nbsp;Placement&nbsp;generated&nbsp;during&nbsp;map.<BR></SPAN>
+<SPAN class=Info1>Routing:&nbsp;Completed&nbsp;-&nbsp;No&nbsp;errors&nbsp;found.<BR></SPAN>
+<SPAN class=Info1>Timing:&nbsp;Completed&nbsp;-&nbsp;No&nbsp;errors&nbsp;found.<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Number&nbsp;of&nbsp;error&nbsp;messages:&nbsp;0<BR></SPAN>
+<SPAN class=Info1>Number&nbsp;of&nbsp;warning&nbsp;messages:&nbsp;1<BR></SPAN>
+<SPAN class=Info1>Number&nbsp;of&nbsp;info&nbsp;messages:&nbsp;0<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Writing&nbsp;design&nbsp;to&nbsp;file&nbsp;top.ncd<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>PAR&nbsp;done!<BR></SPAN>
+<SPAN class=Info1>Executing&nbsp;&quot;C:\Logiciels\Xilinx\14.4\ISE_DS\ISE\bin\nt64\netgen.exe&quot;&nbsp;-w&nbsp;-sim&nbsp;-ofmt&nbsp;vhdl&nbsp;-pcf&nbsp;&quot;top.pcf&quot;&nbsp;&nbsp;-tpw&nbsp;0&nbsp;&nbsp;-rpw&nbsp;100&nbsp;&nbsp;-s&nbsp;&nbsp;1&nbsp;&nbsp;-ar&nbsp;&nbsp;Structure&nbsp;&nbsp;-insert_pp_buffers&nbsp;true&nbsp;&quot;top.ncd&quot;&nbsp;&quot;time_sim.vhd&quot;<BR></SPAN>
+<SPAN class=Info1>Release&nbsp;14.4&nbsp;-&nbsp;netgen&nbsp;P.49d&nbsp;(nt64)<BR></SPAN>
+<SPAN class=Info1>Copyright&nbsp;(c)&nbsp;1995-2012&nbsp;Xilinx,&nbsp;Inc.&nbsp;&nbsp;All&nbsp;rights&nbsp;reserved.<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Command&nbsp;Line:&nbsp;netgen&nbsp;-w&nbsp;-sim&nbsp;-ofmt&nbsp;vhdl&nbsp;-pcf&nbsp;top.pcf&nbsp;-tpw&nbsp;0&nbsp;-rpw&nbsp;100&nbsp;-s&nbsp;1&nbsp;-ar<BR></SPAN>
+<SPAN class=Info1>Structure&nbsp;-insert_pp_buffers&nbsp;true&nbsp;top.ncd&nbsp;time_sim.vhd&nbsp;&nbsp;<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Read&nbsp;and&nbsp;Annotate&nbsp;design&nbsp;'top.ncd'&nbsp;...<BR></SPAN>
+<SPAN class=Info1>=======<BR></SPAN>
+<SPAN class=Info1>Flattening&nbsp;design&nbsp;...<BR></SPAN>
+<SPAN class=Info1>Processing&nbsp;design&nbsp;...&nbsp;<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;Preping&nbsp;design's&nbsp;networks&nbsp;...<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;Preping&nbsp;design's&nbsp;macros&nbsp;...<BR></SPAN>
+<SPAN class=Info1>Writing&nbsp;VHDL&nbsp;netlist&nbsp;'time_sim.vhd'&nbsp;...<BR></SPAN>
+<SPAN class=Info1>Writing&nbsp;VHDL&nbsp;SDF&nbsp;file&nbsp;'time_sim.sdf'&nbsp;...<BR></SPAN>
+<SPAN class=Info1>INFO:NetListWriters:635&nbsp;-&nbsp;The&nbsp;generated&nbsp;VHDL&nbsp;netlist&nbsp;contains&nbsp;Xilinx&nbsp;SIMPRIM<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;simulation&nbsp;primitives&nbsp;and&nbsp;has&nbsp;to&nbsp;be&nbsp;used&nbsp;with&nbsp;SIMPRIM&nbsp;library&nbsp;for&nbsp;correct<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;compilation&nbsp;and&nbsp;simulation.&nbsp;<BR></SPAN>
+<SPAN class=Info1>INFO:NetListWriters&nbsp;-&nbsp;Xilinx&nbsp;recommends&nbsp;running&nbsp;separate&nbsp;simulations&nbsp;to&nbsp;check<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;for&nbsp;setup&nbsp;by&nbsp;specifying&nbsp;the&nbsp;MAX&nbsp;field&nbsp;in&nbsp;the&nbsp;SDF&nbsp;file&nbsp;and&nbsp;for&nbsp;hold&nbsp;by<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;specifying&nbsp;the&nbsp;MIN&nbsp;field&nbsp;in&nbsp;the&nbsp;SDF&nbsp;file.&nbsp;Please&nbsp;refer&nbsp;to&nbsp;Simulator<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;documentation&nbsp;for&nbsp;more&nbsp;details&nbsp;on&nbsp;specifying&nbsp;MIN&nbsp;and&nbsp;MAX&nbsp;field&nbsp;in&nbsp;the&nbsp;SDF.<BR></SPAN>
+<SPAN class=Info1>INFO:NetListWriters:665&nbsp;-&nbsp;For&nbsp;more&nbsp;information&nbsp;on&nbsp;how&nbsp;to&nbsp;pass&nbsp;the&nbsp;SDF&nbsp;switches<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;to&nbsp;the&nbsp;simulator,&nbsp;see&nbsp;your&nbsp;Simulator&nbsp;tool&nbsp;documentation.<BR></SPAN>
+<SPAN class=Info1>Number&nbsp;of&nbsp;warnings:&nbsp;0<BR></SPAN>
+<SPAN class=Info1>Number&nbsp;of&nbsp;info&nbsp;messages:&nbsp;3<BR></SPAN>
+<SPAN class=Info1>Total&nbsp;memory&nbsp;usage&nbsp;is&nbsp;395652&nbsp;kilobytes<BR></SPAN>
+<SPAN class=Info1><BR></SPAN>
+<SPAN class=Info1>Created&nbsp;netgen&nbsp;log&nbsp;file&nbsp;'time_sim.nlf'.<BR></SPAN>
+<SPAN class=Info1>Executing&nbsp;&quot;C:\Logiciels\Xilinx\14.4\ISE_DS\ISE\bin\nt64\bitgen.exe&quot;&nbsp;-intstyle&nbsp;ise&nbsp;-f&nbsp;&quot;top.ut&quot;&nbsp;&quot;top.ncd&quot;&nbsp;&quot;top&quot;&nbsp;&quot;top.pcf&quot;<BR></SPAN>
+<SPAN class=Info1>INFO:Bitgen:40&nbsp;-&nbsp;Replacing&nbsp;&quot;Auto&quot;&nbsp;with&nbsp;&quot;NoWait&quot;&nbsp;for&nbsp;option&nbsp;&quot;Match_cycle&quot;.&nbsp;&nbsp;Most<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;commonly,&nbsp;bitgen&nbsp;has&nbsp;determined&nbsp;and&nbsp;will&nbsp;use&nbsp;a&nbsp;specific&nbsp;value&nbsp;instead&nbsp;of&nbsp;the<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;generic&nbsp;command-line&nbsp;value&nbsp;of&nbsp;&quot;Auto&quot;.&nbsp;&nbsp;Alternately,&nbsp;this&nbsp;message&nbsp;appears&nbsp;if<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;the&nbsp;same&nbsp;option&nbsp;is&nbsp;specified&nbsp;multiple&nbsp;times&nbsp;on&nbsp;the&nbsp;command-line.&nbsp;&nbsp;In&nbsp;this<BR></SPAN>
+<SPAN class=Info1>&nbsp;&nbsp;&nbsp;case,&nbsp;the&nbsp;option&nbsp;listed&nbsp;last&nbsp;will&nbsp;be&nbsp;used.<BR></SPAN>
+<SPAN class=Info1>Implementation&nbsp;ver1-&gt;rev1:&nbsp;0&nbsp;error(s),&nbsp;7&nbsp;warning(s)<BR></SPAN>
+<SPAN class=Warn1>Implementation&nbsp;ended&nbsp;with&nbsp;warning(s).<BR></SPAN>
+<SPAN class=Warn1><BR></SPAN>
+
+</FONT>
+</BODY>
+
+</HTML>
+		

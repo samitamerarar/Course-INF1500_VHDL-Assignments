@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\taara\tp5final\tp5final\implement\ver1\rev1\top.ncd
+OUTFILE=C:\Users\taara\tp5final\tp5final\implement\ver1\rev1\top.bit
+FAMILY=Virtex5
+PART=xc5vlx50t-1ff1136
+WORKINGDIR=C:\Users\taara\tp5final\tp5final\implement\ver1\rev1
+LICENSE=ISE
+USER_INFO=207285910_1777485732_210595613_823

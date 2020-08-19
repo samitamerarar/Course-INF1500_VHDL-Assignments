@@ -1,0 +1,178 @@
+//! **************************************************************************
+// Written by: Map P.49d on Fri Apr 08 22:07:16 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "settingtimeout" LOCATE = SITE "AG8" LEVEL 1;
+COMP "hd44780_db<0>" LOCATE = SITE "Y8" LEVEL 1;
+COMP "hd44780_db<1>" LOCATE = SITE "AB7" LEVEL 1;
+COMP "hd44780_db<2>" LOCATE = SITE "AB5" LEVEL 1;
+COMP "hd44780_db<3>" LOCATE = SITE "AC4" LEVEL 1;
+COMP "hd44780_db<4>" LOCATE = SITE "AB6" LEVEL 1;
+COMP "hd44780_db<5>" LOCATE = SITE "AC5" LEVEL 1;
+COMP "hd44780_db<6>" LOCATE = SITE "AC7" LEVEL 1;
+COMP "settingtimerout" LOCATE = SITE "AH8" LEVEL 1;
+COMP "hd44780_db<7>" LOCATE = SITE "AD7" LEVEL 1;
+COMP "clk" LOCATE = SITE "AG18" LEVEL 1;
+COMP "rst" LOCATE = SITE "G6" LEVEL 1;
+COMP "buzzerleds<0>" LOCATE = SITE "AH10" LEVEL 1;
+COMP "buzzerleds<1>" LOCATE = SITE "AG11" LEVEL 1;
+COMP "buzzerleds<2>" LOCATE = SITE "AF11" LEVEL 1;
+COMP "buzzerleds<3>" LOCATE = SITE "AE11" LEVEL 1;
+COMP "hd44780_en" LOCATE = SITE "AA5" LEVEL 1;
+COMP "hd44780_rs" LOCATE = SITE "V7" LEVEL 1;
+COMP "hd44780_rw" LOCATE = SITE "W6" LEVEL 1;
+COMP "pb_hour" LOCATE = SITE "K19" LEVEL 1;
+COMP "ovenout" LOCATE = SITE "AH9" LEVEL 1;
+COMP "pb_min" LOCATE = SITE "J17" LEVEL 1;
+COMP "pb_settimer" LOCATE = SITE "H15" LEVEL 1;
+COMP "pb_canceltimer" LOCATE = SITE "G7" LEVEL 1;
+COMP "pb_settime" LOCATE = SITE "E6" LEVEL 1;
+TIMEGRP clk = BEL "U23/pulse" BEL "U23/state_0" BEL "U21/pulse" BEL
+        "U21/state_0" BEL "U19/pulse" BEL "U19/state_0" BEL "U17/pulse" BEL
+        "U17/state_0" BEL "U15/pulse" BEL "U15/state_0" BEL "U24/count_per_19"
+        BEL "U24/count_per_18" BEL "U24/count_per_17" BEL "U24/count_per_16"
+        BEL "U24/count_per_15" BEL "U24/count_per_14" BEL "U24/count_per_13"
+        BEL "U24/count_per_12" BEL "U24/count_per_11" BEL "U24/count_per_10"
+        BEL "U24/count_per_9" BEL "U24/count_per_8" BEL "U24/count_per_7" BEL
+        "U24/count_per_6" BEL "U24/count_per_5" BEL "U24/count_per_4" BEL
+        "U24/count_per_3" BEL "U24/count_per_2" BEL "U24/count_per_1" BEL
+        "U24/count_per_0" BEL "U24/pb_sampled" BEL "U24/pb_deb" BEL
+        "U24/clk_deb" BEL "U22/count_per_19" BEL "U22/count_per_18" BEL
+        "U22/count_per_17" BEL "U22/count_per_16" BEL "U22/count_per_15" BEL
+        "U22/count_per_14" BEL "U22/count_per_13" BEL "U22/count_per_12" BEL
+        "U22/count_per_11" BEL "U22/count_per_10" BEL "U22/count_per_9" BEL
+        "U22/count_per_8" BEL "U22/count_per_7" BEL "U22/count_per_6" BEL
+        "U22/count_per_5" BEL "U22/count_per_4" BEL "U22/count_per_3" BEL
+        "U22/count_per_2" BEL "U22/count_per_1" BEL "U22/count_per_0" BEL
+        "U22/pb_sampled" BEL "U22/pb_deb" BEL "U22/clk_deb" BEL
+        "U20/count_per_19" BEL "U20/count_per_18" BEL "U20/count_per_17" BEL
+        "U20/count_per_16" BEL "U20/count_per_15" BEL "U20/count_per_14" BEL
+        "U20/count_per_13" BEL "U20/count_per_12" BEL "U20/count_per_11" BEL
+        "U20/count_per_10" BEL "U20/count_per_9" BEL "U20/count_per_8" BEL
+        "U20/count_per_7" BEL "U20/count_per_6" BEL "U20/count_per_5" BEL
+        "U20/count_per_4" BEL "U20/count_per_3" BEL "U20/count_per_2" BEL
+        "U20/count_per_1" BEL "U20/count_per_0" BEL "U20/pb_sampled" BEL
+        "U20/pb_deb" BEL "U20/clk_deb" BEL "U18/count_per_19" BEL
+        "U18/count_per_18" BEL "U18/count_per_17" BEL "U18/count_per_16" BEL
+        "U18/count_per_15" BEL "U18/count_per_14" BEL "U18/count_per_13" BEL
+        "U18/count_per_12" BEL "U18/count_per_11" BEL "U18/count_per_10" BEL
+        "U18/count_per_9" BEL "U18/count_per_8" BEL "U18/count_per_7" BEL
+        "U18/count_per_6" BEL "U18/count_per_5" BEL "U18/count_per_4" BEL
+        "U18/count_per_3" BEL "U18/count_per_2" BEL "U18/count_per_1" BEL
+        "U18/count_per_0" BEL "U18/pb_sampled" BEL "U18/pb_deb" BEL
+        "U18/clk_deb" BEL "U16/count_per_19" BEL "U16/count_per_18" BEL
+        "U16/count_per_17" BEL "U16/count_per_16" BEL "U16/count_per_15" BEL
+        "U16/count_per_14" BEL "U16/count_per_13" BEL "U16/count_per_12" BEL
+        "U16/count_per_11" BEL "U16/count_per_10" BEL "U16/count_per_9" BEL
+        "U16/count_per_8" BEL "U16/count_per_7" BEL "U16/count_per_6" BEL
+        "U16/count_per_5" BEL "U16/count_per_4" BEL "U16/count_per_3" BEL
+        "U16/count_per_2" BEL "U16/count_per_1" BEL "U16/count_per_0" BEL
+        "U16/pb_sampled" BEL "U16/pb_deb" BEL "U16/clk_deb" BEL "U2/cs_6" BEL
+        "U2/cs_5" BEL "U2/cs_4" BEL "U2/cs_3" BEL "U2/cs_2" BEL "U2/cs_1" BEL
+        "U2/cs_0" BEL "U2/cm_6" BEL "U2/cm_5" BEL "U2/cm_4" BEL "U2/cm_3" BEL
+        "U2/cm_2" BEL "U2/cm_1" BEL "U2/cm_0" BEL "U2/ch_6" BEL "U2/ch_5" BEL
+        "U2/ch_4" BEL "U2/ch_3" BEL "U2/ch_2" BEL "U2/ch_1" BEL "U2/ch_0" BEL
+        "U34/leds_3" BEL "U34/leds_2" BEL "U34/leds_1" BEL "U34/leds_0" BEL
+        "U34/o_3" BEL "U34/o_2" BEL "U34/o_1" BEL "U34/o_0" BEL "U36/cs_5" BEL
+        "U36/cs_4" BEL "U36/cs_3" BEL "U36/cs_2" BEL "U36/cs_1" BEL "U36/cs_0"
+        BEL "U36/cm_6" BEL "U36/cm_5" BEL "U36/cm_4" BEL "U36/cm_3" BEL
+        "U36/cm_2" BEL "U36/cm_1" BEL "U36/cm_0" BEL "U37/cur_state_FSM_FFd2"
+        BEL "U37/cur_state_FSM_FFd1" BEL "U37/cur_state_FSM_FFd3" BEL
+        "U37/set_time" BEL "U37/reset_timer" BEL "U37/buzz" BEL "U37/oven" BEL
+        "U37/set_timer" BEL "U37/reset_time" BEL
+        "U30/my_hd44780_simple/cur_state_0" BEL
+        "U30/my_hd44780_simple/cur_state_1" BEL
+        "U30/my_hd44780_simple/cur_state_2" BEL
+        "U30/my_hd44780_simple/cur_state_3" BEL
+        "U30/my_hd44780_simple/cur_state_6" BEL
+        "U30/my_hd44780_simple/cur_state_4" BEL
+        "U30/my_hd44780_simple/cur_state_5" BEL
+        "U30/my_hd44780_simple/cur_state_9" BEL
+        "U30/my_hd44780_simple/cur_state_7" BEL
+        "U30/my_hd44780_simple/cur_state_8" BEL
+        "U30/my_hd44780_simple/cur_state_12" BEL
+        "U30/my_hd44780_simple/cur_state_10" BEL
+        "U30/my_hd44780_simple/cur_state_11" BEL
+        "U30/my_hd44780_simple/timer_called_cnt_FSM_FFd2" BEL
+        "U30/my_hd44780_simple/timer_called_cnt_FSM_FFd1" BEL
+        "U30/my_hd44780_simple/count_6" BEL "U30/my_hd44780_simple/count_5"
+        BEL "U30/my_hd44780_simple/count_4" BEL
+        "U30/my_hd44780_simple/count_3" BEL "U30/my_hd44780_simple/count_2"
+        BEL "U30/my_hd44780_simple/count_1" BEL
+        "U30/my_hd44780_simple/count_0" BEL "U30/my_hd44780_simple/valuez_15"
+        BEL "U30/my_hd44780_simple/valuez_14" BEL
+        "U30/my_hd44780_simple/valuez_13" BEL
+        "U30/my_hd44780_simple/valuez_12" BEL
+        "U30/my_hd44780_simple/valuez_11" BEL
+        "U30/my_hd44780_simple/valuez_10" BEL "U30/my_hd44780_simple/valuez_9"
+        BEL "U30/my_hd44780_simple/valuez_8" BEL
+        "U30/my_hd44780_simple/valuez_7" BEL "U30/my_hd44780_simple/valuez_6"
+        BEL "U30/my_hd44780_simple/valuez_5" BEL
+        "U30/my_hd44780_simple/valuez_4" BEL "U30/my_hd44780_simple/valuez_3"
+        BEL "U30/my_hd44780_simple/valuez_2" BEL
+        "U30/my_hd44780_simple/valuez_1" BEL "U30/my_hd44780_simple/valuez_0"
+        BEL "U30/my_hd44780_simple/running_0" BEL
+        "U30/my_hd44780_simple/hd44780_db_7" BEL
+        "U30/my_hd44780_simple/hd44780_db_5" BEL
+        "U30/my_hd44780_simple/hd44780_db_4" BEL
+        "U30/my_hd44780_simple/hd44780_db_3" BEL
+        "U30/my_hd44780_simple/hd44780_db_2" BEL
+        "U30/my_hd44780_simple/hd44780_db_1" BEL
+        "U30/my_hd44780_simple/hd44780_db_0" BEL
+        "U30/my_hd44780_simple/cur_ddram_addr_2" BEL
+        "U30/my_hd44780_simple/cur_ddram_addr_1" BEL
+        "U30/my_hd44780_simple/cur_ddram_addr_0" BEL
+        "U30/my_hd44780_simple/en_count_4" BEL
+        "U30/my_hd44780_simple/en_count_3" BEL
+        "U30/my_hd44780_simple/en_count_2" BEL
+        "U30/my_hd44780_simple/en_count_1" BEL
+        "U30/my_hd44780_simple/en_count_0" BEL "U30/my_hd44780_simple/clk_us"
+        BEL "U30/my_hd44780_simple/timer2state_done" BEL
+        "U30/my_hd44780_simple/en_started_0" BEL
+        "U30/my_hd44780_simple/state2timer_go" BEL
+        "U30/my_hd44780_simple/next_state_12" BEL
+        "U30/my_hd44780_simple/next_state_11" BEL
+        "U30/my_hd44780_simple/next_state_10" BEL
+        "U30/my_hd44780_simple/next_state_9" BEL
+        "U30/my_hd44780_simple/next_state_8" BEL
+        "U30/my_hd44780_simple/next_state_7" BEL
+        "U30/my_hd44780_simple/next_state_6" BEL
+        "U30/my_hd44780_simple/next_state_5" BEL
+        "U30/my_hd44780_simple/next_state_4" BEL
+        "U30/my_hd44780_simple/next_state_3" BEL
+        "U30/my_hd44780_simple/next_state_0" BEL
+        "U30/my_hd44780_simple/hd44780_rs" BEL
+        "U30/my_hd44780_simple/timer_us_value_15" BEL
+        "U30/my_hd44780_simple/timer_us_value_13" BEL
+        "U30/my_hd44780_simple/timer_us_value_11" BEL
+        "U30/my_hd44780_simple/timer_us_value_9" BEL
+        "U30/my_hd44780_simple/timer_us_value_8" BEL
+        "U30/my_hd44780_simple/timer_us_value_7" BEL
+        "U30/my_hd44780_simple/timer_us_value_6" BEL
+        "U30/my_hd44780_simple/timer_us_value_5" BEL
+        "U30/my_hd44780_simple/timer_us_value_4" BEL
+        "U30/my_hd44780_simple/timer_us_value_3" BEL
+        "U30/my_hd44780_simple/timer_us_value_2" BEL
+        "U30/my_hd44780_simple/timer_us_value_0" BEL
+        "U30/my_hd44780_simple/cur_line_0" BEL "U34/cnt_31" BEL "U34/cnt_30"
+        BEL "U34/cnt_29" BEL "U34/cnt_28" BEL "U34/cnt_27" BEL "U34/cnt_26"
+        BEL "U34/cnt_25" BEL "U34/cnt_24" BEL "U34/cnt_23" BEL "U34/cnt_22"
+        BEL "U34/cnt_21" BEL "U34/cnt_20" BEL "U34/cnt_19" BEL "U34/cnt_18"
+        BEL "U34/cnt_17" BEL "U34/cnt_16" BEL "U34/cnt_15" BEL "U34/cnt_14"
+        BEL "U34/cnt_13" BEL "U34/cnt_12" BEL "U34/cnt_11" BEL "U34/cnt_10"
+        BEL "U34/cnt_9" BEL "U34/cnt_8" BEL "U34/cnt_7" BEL "U34/cnt_6" BEL
+        "U34/cnt_5" BEL "U34/cnt_4" BEL "U34/cnt_3" BEL "U34/cnt_2" BEL
+        "U34/cnt_1" BEL "U34/cnt_0" BEL "U1/count_31" BEL "U1/count_30" BEL
+        "U1/count_29" BEL "U1/count_28" BEL "U1/count_27" BEL "U1/count_25"
+        BEL "U1/count_19" BEL "U1/count_17" BEL "U1/count_12" BEL
+        "U1/count_11" BEL "U1/count_10" BEL "U1/count_9" BEL "U1/count_8" BEL
+        "U1/clk_1hz" BEL "U1/count_26" BEL "U1/count_24" BEL "U1/count_23" BEL
+        "U1/count_22" BEL "U1/count_21" BEL "U1/count_20" BEL "U1/count_18"
+        BEL "U1/count_16" BEL "U1/count_15" BEL "U1/count_14" BEL
+        "U1/count_13" BEL "U1/count_7" BEL "U1/count_6" BEL "U1/count_5" BEL
+        "U1/count_4" BEL "U1/count_3" BEL "U1/count_2" BEL "U1/count_1" BEL
+        "U1/count_0" BEL "clk_BUFGP/BUFG";
+ts_clk = PERIOD TIMEGRP "clk" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

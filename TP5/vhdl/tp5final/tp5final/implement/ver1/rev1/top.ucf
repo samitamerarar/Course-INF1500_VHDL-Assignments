@@ -1,0 +1,30 @@
+net clk loc = ag18;
+net clk tnm_net = clk;
+timespec ts_clk = period "clk" 100 MHz high 50%;
+
+net hd44780_en loc = aa5;
+net hd44780_rs loc = v7;
+net hd44780_rw loc = w6;
+net hd44780_db<0> loc = y8;
+net hd44780_db<1> loc = ab7;
+net hd44780_db<2> loc = ab5;
+net hd44780_db<3> loc = ac4;
+net hd44780_db<4> loc = ab6;
+net hd44780_db<5> loc = ac5;
+net hd44780_db<6> loc = ac7;
+net hd44780_db<7> loc = ad7;
+
+net settingtimeout loc = ag8;
+net settingtimerout loc = ah8;
+net ovenout loc = ah9;
+net buzzerleds<0> loc = ah10;
+net buzzerleds<1> loc = ag11;
+net buzzerleds<2> loc = af11;
+net buzzerleds<3> loc = ae11;
+
+net rst loc = g6;
+net pb_min loc = j17;
+net pb_hour loc = k19;
+net pb_settime loc = e6;
+net pb_settimer loc = h15;
+net pb_canceltimer loc = g7;
